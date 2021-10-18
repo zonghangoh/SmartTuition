@@ -4,8 +4,8 @@
     font-size: 1.4rem;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    color: #3677F2;
-    box-shadow: rgb(101, 182, 248) 0px calc(0.4625rem) 0px;
+    color: #096ba8;
+    box-shadow: #096ba8 0px calc(0.4625rem) 0px;
     border-radius: calc(0.925rem);
     border: none;
     padding-left: 2rem;
@@ -24,7 +24,7 @@
     background-repeat: no-repeat;
     min-height: 50vh;
     color: white;
-    background-color: #3677F2;
+    background-color: #4eb2f0;
 }
 
 .container-max {
@@ -34,7 +34,7 @@
 }
 
 .navbar {
-    background-color: #3677F2;
+    background-color: #4eb2f0;
 }
 
 .banner-container {
@@ -69,7 +69,7 @@ body {
 }
 
 small {
-   color: #3677F2;
+   color: #4eb2f0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -81,7 +81,7 @@ small {
         background-repeat: no-repeat;
         min-height: 50vh;
         color: white;
-        background-color: #3677F2;
+        background-color: #4eb2f0;
         background-blend-mode: multiply;
 
     }
