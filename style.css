@@ -1,0 +1,18 @@
+.banner {
+    margin-right: 5vw;
+    background-image:url('assets/smart_boy.png');
+    background-size: contain;
+    background-position:right;
+    background-repeat: no-repeat;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    /* margin-top: 5vw;
+    margin-bottom: 5vw; */
+    height: 50vh;
+    color: white;
+    background-color: #5674AC;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
