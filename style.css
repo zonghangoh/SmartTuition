@@ -1,18 +1,89 @@
+.pop-button {
+    height: calc(3.2375rem);
+    transform: translateY(calc(-0.4625rem));
+    font-size: 1.4rem;
+    width: 100%;
+    background-color: rgb(170, 142, 202);
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(101, 89, 189) 0px calc(0.4625rem) 0px;
+    border-radius: calc(0.925rem);
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.nav-item{
+    padding-left: 1rem;
+}
+
 .banner {
-    margin-right: 5vw;
+    margin-top: 10vh;
     background-image:url('assets/smart_boy.png');
     background-size: contain;
     background-position:right;
     background-repeat: no-repeat;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    /* margin-top: 5vw;
-    margin-bottom: 5vw; */
-    height: 50vh;
+    min-height: 50vh;
     color: white;
     background-color: #5674AC;
+}
+
+.container-max {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: #5674AC;
+}
+
+.banner-container {
+    /* padding: 20px 0 157px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-container:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 100px;
+    left: 0;
+    width: 100%;
+    bottom: -50px;
+    -webkit-transform: skewY(-3.5deg);
+    -ms-transform: skewY(-3.5deg);
+    transform: skewY(-3.5deg);
+}
+
+
+.avatar {
+    border: white !important;
+    border-style: solid !important;
+    width: 3rem;
+    margin-right: 0.5rem;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+small {
+   color: rgb(170, 142, 202);
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        margin-top: 10vh;
+        background-image:url('assets/smart_boy.png');
+        background-size: 50vw;
+        background-position:right;
+        background-repeat: no-repeat;
+        min-height: 50vh;
+        color: white;
+        background-color: #5674AC;
+        background-blend-mode: multiply;
+
+    }
+    
+  }
