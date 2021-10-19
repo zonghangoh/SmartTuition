@@ -12,6 +12,81 @@
     padding-right: 2rem;
 }
 
+.small-pop-button:active {
+    height: calc(1.6187rem);
+    transform: translateY(calc(0rem));
+    /* transform: translateY(calc(-0.4625rem)); */
+    font-size: 0.8rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #096ba8;
+    box-shadow: none;
+    border-radius: calc(0.925rem);
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.small-pop-button {
+    height: calc(1.6187rem);
+    transform: translateY(calc(-0.4625rem));
+    font-size: 0.7rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #096ba8;
+    box-shadow: #549ecc 0px calc(0.4625rem) 0px;
+    border-radius: calc(0.925rem);
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.pop-button:active {
+    height: calc(3.2375rem);
+    transform: translateY(calc(0rem));
+    /* transform: translateY(calc(-0.4625rem)); */
+
+    font-size: 1.4rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #096ba8;
+    box-shadow: none;
+    border-radius: calc(0.925rem);
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.pop-button-blue {
+    height: calc(3.2375rem);
+    transform: translateY(calc(-0.4625rem));
+    font-size: 1.4rem;
+    width: 100%;
+    background-color: #4eb2f0;
+    color: white;
+    box-shadow: #054972 0px calc(0.4625rem) 0px;
+    border-radius: calc(0.925rem);
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.pop-button-blue:active {
+    height: calc(3.2375rem);
+    transform: translateY(calc(0rem));
+    /* transform: translateY(calc(-0.4625rem)); */
+
+    font-size: 1.4rem;
+    width: 100%;
+    background-color: #4eb2f0;
+    color: white;
+    box-shadow: none;
+    border-radius: calc(0.925rem);
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .nav-item{
     padding-left: 1rem;
 }
@@ -35,6 +110,11 @@
 
 .navbar {
     background-color: #4eb2f0;
+}
+
+
+.navbar-transparent{
+    background-color: #4eb2f000;
 }
 
 .banner-container {
@@ -85,11 +165,14 @@
     padding: 1vw;
 }
 
-.card {
+
+
+.card-blue {
     border-color: #4eb2f0;
     border-style: solid;
     border-width: 5px;
 }
+
 
 
 
@@ -141,6 +224,9 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+    .hide-mobile {
+        visibility: hidden;
+    }
     .banner {
         margin-top: 10vh;
         background-image:url('assets/smart_boy.png');
@@ -157,11 +243,15 @@ body {
   }
   
 .footer {
-    margin-top: 35vh;
+    margin-top: 15vh;
     background: #4eb2f0;
     color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.input-group-text{
+    background: white;
 }
 
 .footer-icon {
@@ -173,6 +263,38 @@ body {
     color: white;
 }
 
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
+    height: 100%;
+    background-color: #4eb2f0;
+}
+
+.btn {
+    background-color: #4eb2f0;
+    color: white;
+}
+
+.background-svg.show {
+    opacity: .3;
+    transition: opacity .5s ease;
+}
+
+.background-svg {
+    width: 100%;
+    opacity: 0;
+    transition: all .5s ease;
+    max-height: 100%;
+    background-color: transparent;
+}
+
+.blue-text {
+   color: #4eb2f0;
+}
+
 body {
     background: #f7f8f8;
 }
@@ -181,4 +303,17 @@ a {
     text-underline-position: under;
 }
 
+p {
+    color: grey;
+}
 
+.app-jumbo {
+    background-image: url(/assets/app_jumbo1.svg),url(/assets/app_jumbo2.svg);
+    background-size: auto 100%;
+    background-position-x: left,right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: #1a699b;
+    color: #fff;
+    height: 25vh;
+}
