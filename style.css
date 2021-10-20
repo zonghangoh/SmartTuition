@@ -91,6 +91,50 @@
     padding-left: 1rem;
 }
 
+.video-container {
+    overflow: hidden;
+    position: relative;
+    /* width: 50%; */
+    max-width: 800px;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
+
+
+#particles-js canvas {
+    /* display: block; */
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    background-color: #4eb2f0;
+    width: 100vw;
+    height: 70vh;
+    /* position: fixed; */
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+
 .banner {
     margin-top: 10vh;
     background-image:url('assets/smart_boy.png');
@@ -100,6 +144,17 @@
     min-height: 50vh;
     color: white;
     background-color: #4eb2f0;
+}
+
+.app-banner {
+    margin-top: 10vh;
+    /* background-image:url('assets/smart_boy.png');
+    background-size: contain;
+    background-position:right;
+    background-repeat: no-repeat; */
+    min-height: 50vh;
+    color: white;
+    /* background-color: #4eb2f0; */
 }
 
 .container-max {
@@ -124,6 +179,26 @@
 }
 
 .banner-container:after {
+    content: "";
+    position: absolute;
+    background: #f7f8f8;
+    height: 100px;
+    left: 0;
+    width: 100%;
+    bottom: -50px;
+    -webkit-transform: skewY(-3.5deg);
+    -ms-transform: skewY(-3.5deg);
+    transform: skewY(-3.5deg);
+}
+
+.app-banner-container {
+    /* padding: 20px 0 157px; */
+    position: relative;
+    overflow: hidden;
+}
+
+
+.app-banner-container:after {
     content: "";
     position: absolute;
     background: #f7f8f8;
@@ -167,11 +242,19 @@
 
 
 
+
 .card-blue {
     border-color: #4eb2f0;
     border-style: solid;
     border-width: 5px;
 }
+
+.card-dark-blue {
+    border-color: #1a699b;
+    border-style: solid;
+    border-width: 8px;
+}
+
 
 
 
@@ -317,3 +400,6 @@ p {
     color: #fff;
     height: 25vh;
 }
+
+
+  
