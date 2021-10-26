@@ -17,6 +17,7 @@
     <meta property="og:image" content="http://" />
     <meta property="og:url" content="https://smarttuition.web.app/" />
     <title>Smart Tuition</title>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,12 +34,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="stylemc.css" />
   </head>
 
+
   <body>
+    <!-- Start of top navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/">
@@ -74,17 +77,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/blog.html">Blog</a>
                     </li>
-
-
                     <li class="nav-item">
-                        <a class="nav-link active" href="/testimonials.html">Testimonials</a>
+                        <a class="nav-link" href="/testimonials.html">Testimonials</a>
                     </li>
-
                     <li class="nav-item">
-                        <button id='enrol-button' style='font-weight: bold;'>ENROL</button>
+                        <a href='/enrol.html'><button id='enrol-button' style='font-weight: bold;'
+                                class="hide">ENROL</button></a>
                     </li>
                 </ul>
 
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start of Testimonial from Parents -->
     <section class="block">
       <header class="block__header">
         <h2>What our Parents are Saying</h2>
@@ -129,14 +136,32 @@
         </div>
       </div>
     </section>
-<!--  
+
+
+    <!-- Start of footer -->
     <div class="footer">
       <div class="container container-max">
         <div class="row">
           <div class="col">
             <small>© 2021 SmartTuition Pte Ltd</small>
             <br />
-           
+            <!-- <div style='color: #ffff;'>
+                        <a style='color: #ffff;' href="/index.html">
+                            <small>Home</small> </a>
+                        •
+                        <a style='color: #ffff;' href="/contact.html">
+                            <small>Contact Us</small> </a>
+                    </div>
+                    <div style='color: #ffff;'>
+                        <a style='color: #ffff;' href="/personal.html"> <small>Personal Loan</small> </a>
+                        •
+                        <small>Business Loan</small> •
+                        <small>Foreigner Loan</small> •
+                        <small>Education Loan</small> •
+                        <small>Wedding Loan</small> •
+                        <small>Vacation Loan</small> •
+                        <small>Renovation Loan</small>
+                    </div> -->
           </div>
           <div class="col-3" align="right" style="">
             <a href="https://www.facebook.com/moneylendersingapore/">
@@ -150,75 +175,35 @@
         </div>
       </div>
     </div>
--->
 
-<footer class="block block--dark footer">
-  <div class="container grid footer__sections">
-    <section class="collapsible collapsible--expanded footer__section">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading footer__heading">Level</h2>
-        <svg class="icon icon--white collapsible__chevron">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible__content">
-        <ul class="list">
-          <li><a href="#">Secondary One</a></li>
-          <li><a href="#">Secondary Two</a></li>
-          <li><a href="#">Secondary Three</a></li>
-          <li><a href="#">Secondary Four</a></li>
-          <li></li>
-          <li><a href="#">JC One</a></li>
-          <li><a href="#">Junior College More</a></li>
-          <li><a href="#">Learn More</a></li>
-        </ul>
-      </div>
-    </section>
-    <!-- End of Section ONE -->
-    <section class="collapsible footer__section">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading footer__heading">COMPANY</h2>
-        <svg class="icon icon--white collapsible__chevron">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible__content">
-        <ul class="list">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Affiliates</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-    </section>
-    <!-- End of Section TWO -->
-    <section class="collapsible footer__section">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading footer__heading">SUPPORT</h2>
-        <svg class="icon icon--white collapsible__chevron">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible__content">
-        <ul class="list">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Feedback</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-    </section>
-    <!-- End of Section Three -->
-    <section class="footer__brand">
-      <img src="images/logoV12-50x200.png" alt="logo" />
-      <p class="footer__copyright">
-        Copyright &copy; 2021 SG MONEY LENDER. All Rights Reserved. Licence No.
-        XX/2021
-      </p>
-    </section>
-  </div>
-</footer>
+    <script>
+      let pause = false;
+      let reviewCount = 8;
+      let i = [];
+      for (let r = 0; r < reviewCount; r++) {
+        i.push(0);
+      }
 
-
-     
+      var element = document.getElementsByClassName("reviews2");
+      element = element[0];
+      var timeout;
+      element.onmouseover = function (e) {
+        pause = !pause;
+      };
+      element.onmouseout = function (e) {
+        pause = !pause;
+      };
+      const interval = setInterval(function () {
+        if (pause) return;
+        for (let ii = 1; ii <= i.length; ii++) {
+          i[ii - 1] -= 0.1;
+          if (i[ii - 1] < -100 * ii)
+            i[ii - 1] = (i.length - 1) * 100 - 100 * (ii - 1);
+          document.getElementById("lol" + ii).style.transform =
+            "translateX(" + i[ii - 1] + "%)";
+        }
+      }, 1);
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
