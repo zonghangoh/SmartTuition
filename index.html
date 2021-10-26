@@ -40,6 +40,7 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<<<<<<< HEAD
       <div class="container-max container">
         <a class="navbar-brand" href="/">
           <!-- <img src="https://cdn-icons-png.flaticon.com/512/4415/4415603.png" width="30" height="30" alt=""> -->
@@ -98,9 +99,56 @@
               <a class="nav-link" href="/testimonials.html">Testimonials</a>
             </li>
           </ul>
+=======
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/4415/4415603.png" width="30" height="30" alt=""> -->
+                <img src="/assets/logo.png" width="28" height="30" alt="">
+                <span style='font-weight:500;'>SmartTuition</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul style='margin-left: auto;' class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pedagogy.html">Pedagogy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Classes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/secondary.html">Upper Secondary</a>
+                            <a class="dropdown-item" href="/jc.html">Junior College</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/app.html">App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href='/enrol.html'><button id='enrol-button' style='font-weight: bold;'
+                                class="hide">ENROL</button></a>
+                    </li>
+                </ul>
+
+            </div>
+>>>>>>> c9a1bf9999bbff4a29e6ec34bf1be9412e035232
         </div>
       </div>
     </nav>
+<<<<<<< HEAD
     <div
       class="banner-container"
       style="background-color: #4eb2f0; padding-top: 5vh; padding-bottom: 5vh"
@@ -130,6 +178,27 @@
             <br /><br />
             <br /><br />
           </div>
+=======
+    <div class='banner-container' style='background-color: #4eb2f0; padding-top: 5vh; padding-bottom: 5vh;'>
+        <div class='banner container-max container'>
+            <div class='row'>
+                <div class='col-lg-8 col-md-6'>
+                    <h1 style=' font-size: 2.8rem;'>The Smartest Way To Achieve Exam Success</h1>
+                    <p style='color:white' class='lead'>Math & Science Tuition for Upper Secondary and JC students</p>
+
+
+                    <br><br>
+                    <button class='pop-button' style='max-width: 500px; font-weight: bold;'>ENROL IN OUR CLASSES
+                    </button>
+                    <br><br>
+
+                    <span style='color: rgba(255, 255, 255, 0.65);'>Limited slots available, secure
+                        yours today!</span>
+                    <br><br> <br><br>
+                </div>
+            </div>
+            <div class='col'></div>
+>>>>>>> c9a1bf9999bbff4a29e6ec34bf1be9412e035232
         </div>
         <div class="col"></div>
       </div>
@@ -601,6 +670,7 @@
     </div>
 
     <script>
+<<<<<<< HEAD
       let pause = false;
       let reviewCount = 8;
       let i = [];
@@ -625,6 +695,29 @@
             i[ii - 1] = (i.length - 1) * 100 - 100 * (ii - 1);
           document.getElementById("lol" + ii).style.transform =
             "translateX(" + i[ii - 1] + "%)";
+=======
+
+        let myID = document.getElementById("enrol-button");
+
+        var myScrollFunc = function () {
+            var y = window.scrollY;
+            if (y >= 800) {
+                myID.className = "btn btn-purple-outline"
+            } else {
+                myID.className = "btn btn-purple-outline hide"
+            }
+        };
+
+        window.addEventListener("scroll", myScrollFunc);
+
+
+
+        let pause = false;
+        let reviewCount = 8;
+        let i = [];
+        for (let r = 0; r < reviewCount; r++) {
+            i.push(0);
+>>>>>>> c9a1bf9999bbff4a29e6ec34bf1be9412e035232
         }
       }, 1);
     </script>
