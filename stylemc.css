@@ -983,7 +983,6 @@ nav.active {
 
 .footer__section {
   padding: 2rem;
-  border-bottom: 1px solid #393939;
 }
 
 .footer__heading {
@@ -1004,7 +1003,7 @@ nav.active {
 
 @media screen and (min-width: 768px) {
   .footer__sections {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
 
   .footer .collapsible__chevron {
@@ -1042,6 +1041,7 @@ nav.active {
 
   .footer__section .list {
     margin: 0;
+    font-size: 1.6rem;
   }
 
   .footer__heading {
@@ -1345,4 +1345,8 @@ nav.active {
 
 .select-box .option .radio {
   display: none;
+}
+
+.logo__top{
+  margin-top: 1.5rem;
 }

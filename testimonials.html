@@ -43,50 +43,67 @@
   <body>
     <!-- Start of top navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <!-- <img src="https://cdn-icons-png.flaticon.com/512/4415/4415603.png" width="30" height="30" alt=""> -->
-                <img src="/assets/logo.png" width="28" height="30" alt="">
-                <span style='font-weight:500;'>SmartTuition</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul style='margin-left: auto;' class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pedagogy.html">Pedagogy</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Classes
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/secondary.html">Upper Secondary</a>
-                            <a class="dropdown-item" href="/jc.html">Junior College</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/app.html">App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/testimonials.html">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href='/enrol.html'><button id='enrol-button' style='font-weight: bold;'
-                                class="hide">ENROL</button></a>
-                    </li>
-                </ul>
-
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <!-- <img src="https://cdn-icons-png.flaticon.com/512/4415/4415603.png" width="30" height="30" alt=""> -->
+          <img src="/assets/logo.png" width="28" height="30" alt="" />
+          <span style="font-weight: 500">SmartTuition</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul style="margin-left: auto" class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/pedagogy.html">Pedagogy</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Classes
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="/secondary.html"
+                  >Upper Secondary</a
+                >
+                <a class="dropdown-item" href="/jc.html">Junior College</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/app.html">Super App</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/testimonials.html">Testimonials</a>
+            </li>
+            <a href="/enrol.html"
+              ><button id="enrol-button" style="font-weight: bold;">
+                ENROL
+              </button></a
+            >
+          </ul>
         </div>
       </div>
     </nav>
@@ -160,31 +177,42 @@
         <!-- Start of Subject -->
         <section class="collapsible collapsible--expanded footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading"><u>Subjects</u></h2>
+            <h2 class="collapsible__heading footer__heading"><u>Math Subjects</u></h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="assets/sprite.svg#chevron"></use>
             </svg>
           </header>
           <div class="collapsible__content">
             <ul class="list">
-              <li>Mathematics:</li>
               <li><a href="#">E.Math (Sec/IP)</a></li>
               <li><a href="#">A.Math (Sec/IP)</a></li>
               <li><a href="#">H1 Math (JC)</a></li>
-              <li><a href="#">H2 Math (JC)</a></li>
-              <br>
-              <li>Science:</li>
-              <li><a href="#">Combined/Pure Physics (Sec)</a></li>
-              <li><a href="#">Combined/Pure Biology (Sec)</a></li>
-              <li><a href="#">Combined/Pure Chemistry (Sec)</a></li>
-              <li><a href="#">H1/H2 Physics (JC)</a></li>
-              <li><a href="#">H1/H2 Biology (JC)</a></li>
-              <li><a href="#">H1/H2 Chemistry (JC)</a></li>
+              <li><a href="#">H2 Math (JC)</a></li>         
             </ul>
           </div>
         </section>
-        <!-- End of Section Subject -->
-
+        <!-- End of Section Math Subjects -->
+        <!-- Start of Section Science Subjects -->
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading"><u>Science Subjects</u></h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="assets/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Combined/Pure Physics (Sec)</a></li>
+              <li><a href="#">Combined/Pure Biology (Sec)</a></li>
+              <li><a href="#">Combined/Pure Chemistry (Sec)</a></li>
+              <li><a href="#">H1/H2 Physics (JC)</a></li>         
+              <li><a href="#">H1/H2 Biology (JC)</a></li>         
+              <li><a href="#">H1/H2 Chemistry (JC)</a></li>         
+            </ul>
+          </div>
+        </section>
+        <!-- End of Section Science Subjects -->
+        <!-- Start of Section Company -->
         <section class="collapsible footer__section">
           <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading"><u>COMPANY</u></h2>
@@ -201,24 +229,33 @@
               <li><a href="#">Contact</a></li>
               <li><a href="#">Feedback</a></li>
               <li><a href="#">FAQ</a></li>
-
+              <!-- End of Section Company -->
             </ul>
           </div>
         </section>
         <!-- End of Section TWO -->
 
-        <section class="footer__brand">
+        <section class="footer__brand logo__top">
           <a class="navbar-brand" href="/">
-                <!-- <img src="https://cdn-icons-png.flaticon.com/512/4415/4415603.png" width="30" height="30" alt=""> -->
                 <img src="/assets/logo.png" width="28" height="30" alt="">
                 <span class="footer__brand">SmartTuition</span>
-            </a>
+          </a>
           <p class="footer__copyright">
             Copyright &copy; 2021 SmartTuition. <br> All Rights Reserved.
           </p>
+          <div align="center" style="">
+            <a href="https://www.facebook.com/moneylendersingapore/">
+              <i class="footer-icon fab fa-facebook-square"></i>
+            </a>
+            &nbsp;
+            <a href="mailto:zonghangoh@gmail.com">
+              <i class="footer-icon fas fa-envelope-square"></i>
+            </a>
+          </div>
         </section>
       </div>
     </footer>
+    <!-- End of footer -->
     
     <script src="scripts/main.js"></script>   
     <script>
