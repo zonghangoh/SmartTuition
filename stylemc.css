@@ -678,6 +678,11 @@ a {
   /* Could use border: 2px solid red; for temporary visual reference*/
 }
 
+.block__footer{
+    --padding-vertical: 3rem;
+    padding: var(--padding-vertical) 2rem;
+}
+
 .block__header {
   text-align: center;
   margin-bottom: 4rem;
@@ -702,7 +707,7 @@ a {
   color: #7b858b;
 }
 
-.blcok--light {
+.block--light {
   background: var(--color-primary);
 }
 
@@ -1018,7 +1023,6 @@ nav.active {
   .footer__brand {
     order: -1;
     margin-top: 1rem;
-
     font-weight: 500;
   }
 

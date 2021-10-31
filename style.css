@@ -1,269 +1,256 @@
 .hide {
-    display: none;
+  display: none;
 }
 
 .pop-button {
-    height: calc(3.2375rem);
-    transform: translateY(calc(-0.4625rem));
-    font-size: 1.4rem;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    color: #096ba8;
-    box-shadow: #096ba8 0px calc(0.4625rem) 0px;
-    border-radius: calc(0.925rem);
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  height: calc(3.2375rem);
+  transform: translateY(calc(-0.4625rem));
+  font-size: 1.4rem;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: #096ba8;
+  box-shadow: #096ba8 0px calc(0.4625rem) 0px;
+  border-radius: calc(0.925rem);
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .small-pop-button:active {
-    height: calc(1.6187rem);
-    transform: translateY(calc(0rem));
-    /* transform: translateY(calc(-0.4625rem)); */
-    font-size: 0.8rem;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    color: #096ba8;
-    box-shadow: none;
-    border-radius: calc(0.925rem);
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  height: calc(1.6187rem);
+  transform: translateY(calc(0rem));
+  /* transform: translateY(calc(-0.4625rem)); */
+  font-size: 0.8rem;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: #096ba8;
+  box-shadow: none;
+  border-radius: calc(0.925rem);
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .small-pop-button {
-    height: calc(1.6187rem);
-    transform: translateY(calc(-0.4625rem));
-    font-size: 0.7rem;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    color: #096ba8;
-    box-shadow: #549ecc 0px calc(0.4625rem) 0px;
-    border-radius: calc(0.925rem);
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  height: calc(1.6187rem);
+  transform: translateY(calc(-0.4625rem));
+  font-size: 0.7rem;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: #096ba8;
+  box-shadow: #549ecc 0px calc(0.4625rem) 0px;
+  border-radius: calc(0.925rem);
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pop-button:active {
-    height: calc(3.2375rem);
-    transform: translateY(calc(0rem));
-    /* transform: translateY(calc(-0.4625rem)); */
+  height: calc(3.2375rem);
+  transform: translateY(calc(0rem));
+  /* transform: translateY(calc(-0.4625rem)); */
 
-    font-size: 1.4rem;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    color: #096ba8;
-    box-shadow: none;
-    border-radius: calc(0.925rem);
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  font-size: 1.4rem;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: #096ba8;
+  box-shadow: none;
+  border-radius: calc(0.925rem);
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pop-button-blue {
-    height: calc(3.2375rem);
-    transform: translateY(calc(-0.4625rem));
-    font-size: 1.4rem;
-    width: 100%;
-    background-color: #4eb2f0;
-    color: white;
-    box-shadow: #054972 0px calc(0.4625rem) 0px;
-    border-radius: calc(0.925rem);
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  height: calc(3.2375rem);
+  transform: translateY(calc(-0.4625rem));
+  font-size: 1.4rem;
+  width: 100%;
+  background-color: #4eb2f0;
+  color: white;
+  box-shadow: #054972 0px calc(0.4625rem) 0px;
+  border-radius: calc(0.925rem);
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pop-button-blue:active {
-    height: calc(3.2375rem);
-    transform: translateY(calc(0rem));
-    /* transform: translateY(calc(-0.4625rem)); */
+  height: calc(3.2375rem);
+  transform: translateY(calc(0rem));
+  /* transform: translateY(calc(-0.4625rem)); */
 
-    font-size: 1.4rem;
-    width: 100%;
-    background-color: #4eb2f0;
-    color: white;
-    box-shadow: none;
-    border-radius: calc(0.925rem);
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  font-size: 1.4rem;
+  width: 100%;
+  background-color: #4eb2f0;
+  color: white;
+  box-shadow: none;
+  border-radius: calc(0.925rem);
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.nav-item{
-    padding-left: 1rem;
+.nav-item {
+  padding-left: 1rem;
 }
 
 .video-container {
-    overflow: hidden;
-    position: relative;
-    /* width: 50%; */
-    max-width: 800px;
+  overflow: hidden;
+  position: relative;
+  /* width: 50%; */
+  max-width: 800px;
 }
 
 .video-container::after {
-    padding-top: 56.25%;
-    display: block;
-    content: '';
+  padding-top: 56.25%;
+  display: block;
+  content: "";
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} 
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 #particles-js canvas {
-    /* display: block; */
-    vertical-align: bottom;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-    transition: opacity .8s ease, transform 1.4s ease
+  /* display: block; */
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
 }
 
 #particles-js {
-    background-color: #4eb2f0;
-    width: 100vw;
-    height: 85vh;
-    /* position: fixed; */
-    z-index: -10;
-    top: 0;
-    left: 0
+  background-color: #4eb2f0;
+  width: 100vw;
+  height: 85vh;
+  /* position: fixed; */
+  z-index: -10;
+  top: 0;
+  left: 0;
 }
 
-
 .banner {
-    margin-top: 10vh;
-    background-image:url('assets/smart_boy.png');
-    background-size: contain;
-    background-position:right;
-    background-repeat: no-repeat;
-    min-height: 50vh;
-    color: white;
-    background-color: #4eb2f0;
+  margin-top: 10vh;
+  background-image: url("assets/smart_boy.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  color: white;
+  background-color: #4eb2f0;
 }
 
 .app-banner {
-    margin-top: 10vh;
-    /* background-image:url('assets/smart_boy.png');
+  margin-top: 10vh;
+  /* background-image:url('assets/smart_boy.png');
     background-size: contain;
     background-position:right;
     background-repeat: no-repeat; */
-    min-height: 50vh;
-    color: white;
-    /* background-color: #4eb2f0; */
+  min-height: 50vh;
+  color: white;
+  /* background-color: #4eb2f0; */
 }
 
 .container-max {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar {
-    padding-top: 1rem;
-    background-color: #4eb2f0;
+  padding-top: 1rem;
+  background-color: #4eb2f0;
 }
 
-
-.navbar-transparent{
-    background-color: #4eb2f000;
+.navbar-transparent {
+  background-color: #4eb2f000;
 }
 
 .banner-container {
-    /* padding: 20px 0 157px; */
-    position: relative;
-    overflow: hidden;
+  /* padding: 20px 0 157px; */
+  position: relative;
+  overflow: hidden;
 }
 
 .banner-container:after {
-    content: "";
-    position: absolute;
-    background: #f7f8f8;
-    height: 100px;
-    left: 0;
-    width: 100%;
-    bottom: -50px;
-    -webkit-transform: skewY(-3.5deg);
-    -ms-transform: skewY(-3.5deg);
-    transform: skewY(-3.5deg);
+  content: "";
+  position: absolute;
+  background: #f7f8f8;
+  height: 100px;
+  left: 0;
+  width: 100%;
+  bottom: -50px;
+  -webkit-transform: skewY(-3.5deg);
+  -ms-transform: skewY(-3.5deg);
+  transform: skewY(-3.5deg);
 }
 
 .app-banner-container {
-    /* padding: 20px 0 157px; */
-    position: relative;
-    overflow: hidden;
+  /* padding: 20px 0 157px; */
+  position: relative;
+  overflow: hidden;
 }
 
-
 .app-banner-container:after {
-    content: "";
-    position: absolute;
-    background: #f7f8f8;
-    height: 100px;
-    left: 0;
-    width: 100%;
-    bottom: -50px;
-    -webkit-transform: skewY(-3.5deg);
-    -ms-transform: skewY(-3.5deg);
-    transform: skewY(-3.5deg);
+  content: "";
+  position: absolute;
+  background: #f7f8f8;
+  height: 100px;
+  left: 0;
+  width: 100%;
+  bottom: -50px;
+  -webkit-transform: skewY(-3.5deg);
+  -ms-transform: skewY(-3.5deg);
+  transform: skewY(-3.5deg);
 }
 
 .app-feature {
-    background-image:url('assets/shapes.png');
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #4eb2f0; 
+  background-image: url("assets/shapes.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #4eb2f0;
 }
 
-
 .learn-more {
-    color: #4eb2f0;
+  color: #4eb2f0;
 }
 
 .reviews {
-    display: flex;  
-    flex-wrap: nowrap;
-    overflow: hidden;
-}   
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
 
 .reviews2 {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .review-card {
-    flex: none !important;
-    padding: 1vw;
+  flex: none !important;
+  padding: 1vw;
 }
 
-
-
-
 .card-blue {
-    border-color: #4eb2f0;
-    border-style: solid;
-    border-width: 5px;
+  border-color: #4eb2f0;
+  border-style: solid;
+  border-width: 5px;
 }
 
 .card-dark-blue {
-    border-color: #1a699b;
-    border-style: solid;
-    border-width: 8px;
+  border-color: #1a699b;
+  border-style: solid;
+  border-width: 8px;
 }
-
-
-
-
-
 
 /* .value-container {
     position: relative;
@@ -282,161 +269,250 @@
     transform: skewY(-3.5deg); 
 } */
 
-
 .avatar {
-    border: white !important;
-    border-style: solid !important;
-    width: 3rem;
-    height: 3rem;
-    margin-right: 0.5rem;
+  border: white !important;
+  border-style: solid !important;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
 }
 
-
 .avatar-group {
-    display: flex;  
-    flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .jumbotron {
-    padding-left: 2rem;
-    padding-top: 3rem;
-    padding-right: 2rem;
-    margin-bottom: 2rem;
-    background-color: white;
-    border-radius: .8rem;
-  }
-
-
-@media only screen and (max-width: 768px) {
-    .hide-mobile {
-        visibility: hidden;
-    }
-    .banner {
-        margin-top: 10vh;
-        background-image:url('assets/smart_boy.png');
-        background-size: 50vw;
-        background-position:right;
-        background-repeat: no-repeat;
-        min-height: 50vh;
-        color: white;
-        background-color: #4eb2f0;
-        background-blend-mode: multiply;
-
-    }
-    
-  }
-  
-.footer {
-    margin-top: 15vh;
-    background: #4eb2f0;
-    color: white;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  border-radius: 0.8rem;
 }
 
-.input-group-text{
-    background: white;
+@media only screen and (max-width: 768px) {
+  .hide-mobile {
+    visibility: hidden;
+  }
+  .banner {
+    margin-top: 10vh;
+    background-image: url("assets/smart_boy.png");
+    background-size: 50vw;
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    color: white;
+    background-color: #4eb2f0;
+    background-blend-mode: multiply;
+  }
+}
+
+.footer {
+  margin-top: 15vh;
+  background: #4eb2f0;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.input-group-text {
+  background: white;
 }
 
 .footer-icon {
-    color: white;
-    font-size: 2rem;
+  color: white;
+  font-size: 2rem;
 }
 
 .footer-icon:hover {
-    color: white;
+  color: white;
 }
 
 .svg-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -100;
-    height: 100%;
-    background-color: #4eb2f0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -100;
+  height: 100%;
+  background-color: #4eb2f0;
 }
 
 .btn {
-    background-color: #4eb2f0;
-    color: white;
+  background-color: #4eb2f0;
+  color: white;
 }
 
 .background-svg.show {
-    opacity: .3;
-    transition: opacity .5s ease;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
 }
 
 .background-svg {
-    width: 100%;
-    opacity: 0;
-    transition: all .5s ease;
-    max-height: 100%;
-    background-color: transparent;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+  max-height: 100%;
+  background-color: transparent;
 }
 
 .blue-text {
-   color: #4eb2f0;
+  color: #4eb2f0;
 }
 
 body {
-    background: #f7f8f8;
+  background: #f7f8f8;
 }
 
 a {
-    text-underline-position: under;
+  text-underline-position: under;
 }
 
 p {
-    color: grey;
+  color: grey;
 }
 
 .app-jumbo {
-    background-image: url(/assets/app_jumbo1.svg),url(/assets/app_jumbo2.svg);
-    background-size: auto 100%;
-    background-position-x: left,right;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-    background-color: #1a699b;
-    color: #fff;
-    height: 25vh;
+  background-image: url(/assets/app_jumbo1.svg), url(/assets/app_jumbo2.svg);
+  background-size: auto 100%;
+  background-position-x: left, right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-color: #1a699b;
+  color: #fff;
+  height: 25vh;
 }
-
-
-
-
 
 #enrol-button {
-    height: calc(2.625rem);
-    transform: translateY(calc(-0.375rem));
-    font-size: 1rem;
-    width: auto;
-    background-color: white;
-    color: #1a699b !important;
-    box-shadow: #1a699b 0px calc(0.375rem) 0px;
-    border-radius: calc(0.75rem);
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: 2rem;
+  height: calc(2.625rem);
+  transform: translateY(calc(-0.375rem));
+  font-size: 1rem;
+  width: auto;
+  background-color: white;
+  color: #1a699b !important;
+  box-shadow: #1a699b 0px calc(0.375rem) 0px;
+  border-radius: calc(0.75rem);
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 2rem;
 }
-  
 
 #enrol-button:active {
-    height: calc(2.625rem);
-    transform: translateY(calc(0rem));
-    font-size: 1rem;
-    width: auto;
-    background-color: white;
-    color: #1a699b !important;
-    box-shadow: none;
-    border-radius: calc(0.75rem);
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  height: calc(2.625rem);
+  transform: translateY(calc(0rem));
+  font-size: 1rem;
+  width: auto;
+  background-color: white;
+  color: #1a699b !important;
+  box-shadow: none;
+  border-radius: calc(0.75rem);
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-  
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.logo__top {
+  margin-top: 1.5rem;
+}
+
+/* Copy & paste partial css from MC for home. Add stylemc.css will affect other elements that have
+already been created */
+.block-footer {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block-footer--light {
+  background: #2584ff;
+}
+
+.footer-footer {
+  background: #4eb2f0;
+}
+
+.block--footer__footer {
+  --padding-vertical: 3rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.container-footer {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.grid-footer {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
+
+.collapsible-footer__chevron {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+.collapsible-footer__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible-footer--expanded .collapsible-footer__chevron {
+  transform: rotate(90deg);
+}
+
+.collapsible-footer--expanded .collapsible-footer__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.collapsible-footer__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible-footer__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.footer-footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer-footer__section {
+  padding: 2rem;
+}
+
+.icon-footer {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-footer--white {
+  fill: #fff;
+}
+
+.list-footer {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
