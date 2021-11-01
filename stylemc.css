@@ -562,6 +562,10 @@ a {
   padding: 3rem;
 }
 
+.testimonialtwo {
+  padding: 3rem;
+}
+
 .testimonial__image {
   position: relative;
 }
@@ -575,8 +579,27 @@ a {
 .testimonial__image > .icon-container {
   position: absolute;
   top: 3rem;
-  right: -30px;
+  right: -3rem;
 }
+
+/* Testimonial parent 2 */
+.testimonial__imagetwo {
+  position: relative;
+}
+
+.testimonial__imagetwo > img {
+  width: 100%;
+  /* we are targeting image that is directly inside this container. 
+       So, we are using direct child selector*/
+}
+
+.testimonial__imagetwo > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: 50rem;
+  transform: rotate(180deg);
+}
+
 
 @media screen and (min-width: 768px) {
   .testimonial .quote,
@@ -586,15 +609,28 @@ a {
     font-size: 2.4rem;
   }
 
-  .testimonial .quote {
+.testimonial .quote {
     margin-left: 6rem;
+}
+
+.testimonialtwo .quote-left,
+.testimonialtwo .quote-left__author {
+    /* Once again, we see the benefit of BEM convention. We could cleary see the component 
+      and the elements  */
+    font-size: 2.4rem;
+}
+
+.testimonialtwo .quote-left{
+    margin-right: 6rem;
   }
+  
 }
 
 /* Callout */
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  margin-bottom: auto;
 }
 
 .callout--primary {
@@ -676,6 +712,15 @@ a {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
   /* Could use border: 2px solid red; for temporary visual reference*/
+}
+
+.block--student{
+  --padding-vertical: 0rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.margin-testimonial{
+  margin-top: 3rem;
 }
 
 .block__footer{
