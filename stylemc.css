@@ -434,8 +434,8 @@ a {
 .plan--popular .card__header::before {
   content: url(assets/popular.svg);
   width: 40px;
-  display: inline-block; 
-  position: absolute; 
+  display: inline-block;
+  position: absolute;
   top: -6px;
   right: 5%;
 }
@@ -598,7 +598,6 @@ a {
   transform: rotate(180deg);
 }
 
-
 @media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
@@ -607,21 +606,20 @@ a {
     font-size: 2.4rem;
   }
 
-.testimonial .quote {
+  .testimonial .quote {
     margin-left: 6rem;
-}
+  }
 
-.testimonialtwo .quote-left,
-.testimonialtwo .quote-left__author {
+  .testimonialtwo .quote-left,
+  .testimonialtwo .quote-left__author {
     /* Once again, we see the benefit of BEM convention. We could cleary see the component 
       and the elements  */
     font-size: 2.4rem;
-}
+  }
 
-.testimonialtwo .quote-left{
+  .testimonialtwo .quote-left {
     margin-right: 6rem;
   }
-  
 }
 
 /* Callout */
@@ -712,18 +710,18 @@ a {
   /* Could use border: 2px solid red; for temporary visual reference*/
 }
 
-.block--student{
+.block--student {
   --padding-vertical: 0rem;
   padding: var(--padding-vertical) 2rem;
 }
 
-.margin-testimonial{
+.margin-testimonial {
   margin-top: 3rem;
 }
 
-.block__footer{
-    --padding-vertical: 3rem;
-    padding: var(--padding-vertical) 2rem;
+.block__footer {
+  --padding-vertical: 3rem;
+  padding: var(--padding-vertical) 2rem;
 }
 
 .block__header {
@@ -755,7 +753,7 @@ a {
   color: #fff;
 }
 
-.block-testimonial{
+.block-testimonial {
   color: #fff;
 }
 
@@ -910,7 +908,6 @@ nav.active {
 
 .hero__image {
   width: 100%;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -918,11 +915,11 @@ nav.active {
     padding-top: 0;
   }
 
-  .hero-top{
+  .hero-top {
     padding-top: 5rem;
   }
 
-  .image-center{
+  .image-center {
     display: flex;
     align-items: center;
   }
@@ -1417,6 +1414,109 @@ nav.active {
   display: none;
 }
 
-.logo__top{
+.logo__top {
   margin-top: 1.5rem;
+}
+
+/* Tables */
+
+.table-container {
+  padding: 0 10%;
+  margin: 4rem auto 0;
+}
+.table__heading {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--color-body-darker);
+  margin-bottom: 4rem;
+}
+
+.table__timetable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__timetable thead {
+  background-color: var(--color-secondary);
+}
+
+.table__timetable thead tr th {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  color: #000;
+  opacity: 1;
+  padding: 1.2rem;
+  vertical-align: top;
+  border: 1px solid #8b8b8b85;
+}
+
+.table__timetable tbody td {
+  font-size: 1.4rem;
+  letter-spacing: 0.35px;
+  font-weight: normal;
+  color: var(--color-body-darker);
+  background-color: #fcfcfc;
+  padding: 0.8rem;
+  text-align: center;
+  border: 1px solid #8b8b8b85;
+}
+
+.table__timetable .text__vacancy {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.35px;
+  color: var(--color-accent);
+}
+
+.table__timetable tbody tr td .table-btn {
+  width: 13rem;
+  text-decoration: none;
+  line-height: 3.5rem;
+  display: inline-block;
+  background-color: var(--color-primary);
+  font-weight: medium;
+  border-radius: 1.5rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 1.4rem;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .table__timetable thead {
+    display: none;
+  }
+
+  .table__timetable,
+  .table__timetable tbody,
+  .table__timetable tr,
+  .table__timetable td {
+    display: block;
+    width: 100%;
+  }
+
+  .table__timetable tr {
+    margin-bottom: 1.5rem;
+  }
+
+  .table__timetable tbody tr td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table__timetable td::before{
+    content: attr(data-label);
+    position:absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 1.5rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: left;
+  }
 }
