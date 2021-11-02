@@ -34,72 +34,107 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="stylemc.css" />
   </head>
 
-
   <body>
     <!-- Start of top navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <!-- <img src="https://cdn-icons-png.flaticon.com/512/4415/4415603.png" width="30" height="30" alt=""> -->
-                <img src="/assets/logo.png" width="28" height="30" alt="">
-                <span style='font-weight:500;'>SmartTuition</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul style='margin-left: auto;' class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pedagogy.html">Pedagogy</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Classes
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/secondary.html">Upper Secondary</a>
-                            <a class="dropdown-item" href="/jc.html">Junior College</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/app.html">Super App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/testimonials.html">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href='/enrol.html'><button id='enrol-button' style='font-weight: bold;'
-                                class="hide">ENROL</button></a>
-                    </li>
-                </ul>
-
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <!-- <img src="https://cdn-icons-png.flaticon.com/512/4415/4415603.png" width="30" height="30" alt=""> -->
+          <img src="/assets/logo.png" width="28" height="30" alt="" />
+          <span style="font-weight: 500">SmartTuition</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul style="margin-left: auto" class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/pedagogy.html">Pedagogy</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Classes
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="/secondary.html"
+                  >Upper Secondary</a
+                >
+                <a class="dropdown-item" href="/jc.html">Junior College</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/app.html">Super App</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/testimonials.html">Testimonials</a>
+            </li>
+            <a href="/enrol.html"
+              ><button id="enrol-button" style="font-weight: bold">
+                ENROL
+              </button></a
+            >
+          </ul>
         </div>
       </div>
     </nav>
     <!-- End of top navigation -->
 
+    <!-- Start of callout action -->
+    <div class="callout callout--primary">
+      <div class="grid grid--1x2">
+        <div class="callout__content">
+          <h2 class="callout__heading">
+            Be the Next SMART Student, <strong>Join Now.</strong>
+          </h2>
+          <p class="callout--primary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+            inventore tempore, asperiores eaque fuga amet reiciendis quia?
+            Sequi, quis voluptates!
+          </p>
+        </div>
+        <a href="#" class="btn btn--secondary btn--stretched">Enrol Now</a>
+      </div>
+    </div>
 
+    <!-- End of callout action -->
 
     <!-- Start of footer -->
-    <footer class="block block--light footer">
+    <footer class="block block--light footer block__footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading"><u>Product & Services</u></h2>
+            <h2 class="collapsible__heading footer__heading">
+              <u>Product & Services</u>
+            </h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="assets/sprite.svg#chevron"></use>
             </svg>
@@ -116,7 +151,9 @@
         <!-- Start of Subject -->
         <section class="collapsible collapsible--expanded footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading"><u>Math Subjects</u></h2>
+            <h2 class="collapsible__heading footer__heading">
+              <u>Math Subjects</u>
+            </h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="assets/sprite.svg#chevron"></use>
             </svg>
@@ -126,7 +163,7 @@
               <li><a href="#">E.Math (Sec/IP)</a></li>
               <li><a href="#">A.Math (Sec/IP)</a></li>
               <li><a href="#">H1 Math (JC)</a></li>
-              <li><a href="#">H2 Math (JC)</a></li>         
+              <li><a href="#">H2 Math (JC)</a></li>
             </ul>
           </div>
         </section>
@@ -134,7 +171,9 @@
         <!-- Start of Section Science Subjects -->
         <section class="collapsible collapsible--expanded footer__section">
           <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading"><u>Science Subjects</u></h2>
+            <h2 class="collapsible__heading footer__heading">
+              <u>Science Subjects</u>
+            </h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="assets/sprite.svg#chevron"></use>
             </svg>
@@ -144,9 +183,9 @@
               <li><a href="#">Combined/Pure Physics (Sec)</a></li>
               <li><a href="#">Combined/Pure Biology (Sec)</a></li>
               <li><a href="#">Combined/Pure Chemistry (Sec)</a></li>
-              <li><a href="#">H1/H2 Physics (JC)</a></li>         
-              <li><a href="#">H1/H2 Biology (JC)</a></li>         
-              <li><a href="#">H1/H2 Chemistry (JC)</a></li>         
+              <li><a href="#">H1/H2 Physics (JC)</a></li>
+              <li><a href="#">H1/H2 Biology (JC)</a></li>
+              <li><a href="#">H1/H2 Chemistry (JC)</a></li>
             </ul>
           </div>
         </section>
@@ -176,13 +215,14 @@
 
         <section class="footer__brand logo__top">
           <a class="navbar-brand" href="/">
-                <img src="/assets/logo.png" width="28" height="30" alt="">
-                <span class="footer__brand">SmartTuition</span>
+            <img src="/assets/logo.png" width="28" height="30" alt="" />
+            <span class="footer__brand">SmartTuition</span>
           </a>
           <p class="footer__copyright">
-            Copyright &copy; 2021 SmartTuition. <br> All Rights Reserved.
+            Copyright &copy; 2021 SmartTuition. <br />
+            All Rights Reserved.
           </p>
-          <div align="center" style="">
+          <div align="center">
             <a href="https://www.facebook.com/moneylendersingapore/">
               <i class="footer-icon fab fa-facebook-square"></i>
             </a>
@@ -195,8 +235,8 @@
       </div>
     </footer>
     <!-- End of footer -->
-    
-    <script src="scripts/main.js"></script>   
+
+    <script src="scripts/main.js"></script>
     <script>
       let pause = false;
       let reviewCount = 8;

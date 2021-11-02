@@ -156,7 +156,7 @@ a {
 }
 
 .list--tick {
-  list-style-image: url(../images/tick.svg);
+  list-style-image: url(assets/tick.svg);
   padding-left: 3rem; /* without this padding, the ticks will be off the screen */
 }
 
@@ -431,13 +431,11 @@ a {
   position: relative;
 }
 
-/* If we have a plan, we want to insert something before the content of the card hearder */
 .plan--popular .card__header::before {
-  content: url(../images/popular.svg);
+  content: url(assets/popular.svg);
   width: 40px;
-  display: inline-block; /* This is an inline element, so need to set to inline-block for width to work */
-  position: absolute; /* This means we should make the parent or the container (card__header),
-                           a relatively positioned element */
+  display: inline-block; 
+  position: absolute; 
   top: -6px;
   right: 5%;
 }
@@ -754,6 +752,7 @@ a {
 
 .block--light {
   background: var(--color-primary);
+  color: #fff;
 }
 
 .block--dark .block__heading {
@@ -761,7 +760,7 @@ a {
 }
 
 .block--light .block__heading {
-  color: #595e61;
+  color: #e2e2e2;
 }
 
 .block--dark h1,
@@ -902,15 +901,26 @@ nav.active {
   color: #fff;
   letter-spacing: 1px;
   margin: 1rem 0 1rem 1rem; /* Top and Bottom only */
+  margin-left: 0;
 }
 
 .hero__image {
   width: 100%;
+
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 0;
+  }
+
+  .hero-top{
+    padding-top: 5rem;
+  }
+
+  .image-center{
+    display: flex;
+    align-items: center;
   }
 
   .hero__content {
@@ -1130,6 +1140,13 @@ nav.active {
   text-align: center;
   margin-top: 6rem;
   transition: color 0.3s;
+}
+
+.terms-conditions {
+  text-align: center;
+  margin-top: 5rem;
+  font-style: italic;
+  font-size: 1.2rem;
 }
 
 .customized-plan a:hover {
