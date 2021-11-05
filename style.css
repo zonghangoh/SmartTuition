@@ -1,3 +1,22 @@
+/* Defining color palette Remember to commit to git respository if there's any update*/
+:root {
+  /* use of "root" pseudo class selector which matches the
+    HTML element to define our global variables or custom properties */
+  --color-primary: #4eb2f0;
+  --color-secondary: #00d9ff;
+  --color-accent: #564ef0;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 30px;
+}
+
+.subject-img {
+  height: 33vh;
+  width: 100%;
+}
+
 .hide {
   display: none;
 }
@@ -118,7 +137,7 @@
 
 #particles-js canvas {
   /* display: block; */
-  vertical-align: bottom;
+
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -129,7 +148,7 @@
 
 #particles-js {
   background-color: #4eb2f0;
-  width: 100vw;
+  width: 98vw;
   height: 85vh;
   /* position: fixed; */
   z-index: -10;
@@ -159,6 +178,36 @@
   /* background-color: #4eb2f0; */
 }
 
+.contact-header {
+  background-image: url("assets/shapes.png");
+  background-position: bottom;
+  background-repeat: repeat;
+}
+
+.contact-banner {
+  background-image: url("assets/teaching3.jpeg");
+  background-size:cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 42vh;
+  color: white;
+  background-color: #4eb2f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-banner:after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  height: 100px;
+  left: 0;
+  width: 100%;
+  bottom: -50px;
+  -webkit-transform: skewY(-3.5deg);
+  -ms-transform: skewY(-3.5deg);
+  transform: skewY(-3.5deg);
+}
 .container-max {
   max-width: 1000px;
   margin-left: auto;
@@ -240,6 +289,16 @@
   padding: 1vw;
 }
 
+.review-card2{
+  transition: all 0.3s ease;
+  padding: 1vw;
+}
+
+.review-card2:hover {
+  margin-top: -10px;
+}
+
+
 .card-blue {
   border-color: #4eb2f0;
   border-style: solid;
@@ -297,7 +356,10 @@ body {
 
 @media only screen and (max-width: 768px) {
   .hide-mobile {
-    visibility: hidden;
+    display: none !important;
+  }
+  .testimonial-text{
+    margin-top: 2rem;
   }
   .banner {
     margin-top: 10vh;
@@ -312,25 +374,10 @@ body {
   }
 }
 
-.footer {
-  margin-top: 15vh;
-  background: #4eb2f0;
-  color: white;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
+
 
 .input-group-text {
   background: white;
-}
-
-.footer-icon {
-  color: white;
-  font-size: 2rem;
-}
-
-.footer-icon:hover {
-  color: white;
 }
 
 .svg-background {
@@ -425,4 +472,470 @@ p {
 
 .logo__top {
   margin-top: 1.5rem;
+}
+/* Icons */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--primary {
+  fill: var(--color-accent);
+}
+
+.icon--white {
+  fill: #fff;
+}
+
+.icon--black {
+  fill: #000;
+}
+
+.testimonial-icon {
+  margin-left: -52px;
+  margin-top: 20px;
+}
+
+/* single hyphen is used here as this is not a variation or a modifier for the icon class.
+  This is entirely a new class. In BEM, use a single hyphen to separate multiple words */
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%; /* NOTE: width and height has no effect on inline elements (e.g. span) */
+  display: inline-flex; /*NOT block, so there is no linebreak. However, icon is not in the center, so need to use inline-flex */
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
+}
+
+.icon-container--accent {
+  background: var(--color-primary);
+}
+
+.block__footer {
+  --padding-vertical: 3rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+/* Footer */
+.footer {
+  background: #4eb2f0;
+}
+
+.footer a {
+  /* For all links in the footer */
+  color: #fff;
+  opacity: 0.55;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.footer__section {
+  padding: 2rem;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 1.25rem;
+  color: #000;
+  opacity: 0.5;
+}
+
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+
+  .footer__brand img {
+    
+  }
+
+  .footer__copyright {
+    font-size: 1rem;
+  }
+
+  .border__section {
+    border: 0;
+  }
+
+  .footer__brand {
+    font-size: 1.2rem;
+  }
+
+  /* .footer__section .list {
+    margin: 0;
+    text-decoration: none !important; 
+    font-size: 1rem;
+  } */
+
+  .footer__section .list li a {
+    margin: 0;
+    text-decoration: none !important; 
+    font-size: 1rem;
+  }
+
+  .footer__heading {
+    font-size: 1.2rem;
+  }
+}
+
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between; /* This will push the items to the edges of the container and add space between them */
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(90deg);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* blocks */
+.block {
+  /* We are defining a variable in this particular element. It will be available for this block and all its children */
+  --padding-vertical: 6rem;
+  padding: 6rem 2rem 0rem 0;
+  /* Could use border: 2px solid red; for temporary visual reference*/
+}
+
+.block--student {
+  --padding-vertical: 0rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.margin-testimonial {
+  margin-top: 3rem;
+}
+
+.block__footer {
+  --padding-vertical: 3rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block__header {
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block__personal {
+  margin-top: 10rem;
+}
+
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+
+.block--blue {
+  background: #4eb2f0;
+  color: #7b858b;
+}
+
+.block--light {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.block-testimonial {
+  color: #fff;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--light .block__heading {
+  color: #e2e2e2;
+}
+
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+  color: #fff;
+}
+
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  /* So, I dont have to remember to adjust for skewed block */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  /* each 2 no. represent a poiny: x and y offset */
+}
+
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr); /* or code as repeat(2, 1fr) */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid--1x4 {
+    grid-template-columns: repeat(4, 35% 20% 20% 30%);
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  /* display: inline; will not be able to apply margin, so use inline-block */
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(assets/tick.svg);
+  padding-left: 3rem; /* without this padding, the ticks will be off the screen */
+}
+
+.list--tick .list__item {
+  /* We are using nesting here to specify it. Minimize nesting to avoide overly specific selectors. */
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
+
+
+.card{
+  border-radius: 0.8rem;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+/* Defining new rule and saying, if you have an element with a class of card--primary, the header
+     and this element should have a background of color--primary. (Like all similar cases above)*/
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff; /* with text color white */
+  border-radius: 0.8rem;
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: #fff;
+  border-radius: 0.8rem;
+}
+
+.card--primary .badge--primary {
+  background: #126de4;
+}
+
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+
+
+
+/* Plans */
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
+.plan__name {
+  color: #fff;
+  margin: 0; /* Set to 0 as there is too much space above the heading due to h3 default setting */
+  font-weight: 500; /* We are using a variable font, so we can use any weight we want without incurring a 
+                          performance penalty */
+  font-size: 2.4rem;
+}
+
+.plan__price {
+  font-size: 4rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.plan.list_item {
+  margin-bottom: 2rem;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(assets/popular.svg);
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1rem;
+  }
+
+  .plan__price {
+    font-size: 4rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1rem;
+  }
+
+  .plan__description {
+    font-size: 1.2rem;
+  }
+}
+/* Domain block */
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain__prices {
+  color: var(--color-headings);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 6rem); /* 6rem gives height to each row */
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 700px;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  /* In plain enlgish: We are writing media query for screens wider than 768px */
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 2fr));
+  }
+
+  .block-adjustment {
+    margin-bottom: 0;
+  }
+}
+
+/* Plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }

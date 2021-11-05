@@ -21,6 +21,7 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="stylemc.css" />
 </head>
 
 <body>
@@ -29,20 +30,20 @@
     <div class="container">
       <a class="navbar-brand" href="/">
         <!-- <img src="https://cdn-icons-png.flaticon.com/512/4415/4415603.png" width="30" height="30" alt=""> -->
-        <img src="/assets/logo.png" width="28" height="30" alt="">
-        <span style='font-weight:500;'>SmartTuition</span>
+        <img src="/assets/logo.png" width="28" height="30" alt="" />
+        <span style="font-weight: 500">SmartTuition</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul style='margin-left: auto;' class="navbar-nav mb-2 mb-lg-0">
+        <ul style="margin-left: auto" class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="/pedagogy.html">Pedagogy</a>
+            <a class="nav-link active" href="/pedagogy.html">Pedagogy</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="active nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Classes
             </a>
@@ -67,30 +68,44 @@
           <li class="nav-item">
             <a class="nav-link" href="/testimonials.html">Testimonials</a>
           </li>
-          <li class="nav-item">
-            <a href="/enrol.html"><button id='enrol-button' style='font-weight: bold;'>ENROL</button></a>
-          </li>
-
+          <a href="/enrol.html"><button id="enrol-button" style="font-weight: bold">
+              ENROL
+            </button></a>
         </ul>
       </div>
-    </div>
     </div>
   </nav>
   <!-- End of top navigation -->
 
   <!-- Start of Hero -->
-  <section style='background-color: #4eb2f0; color: white;padding-top: 15vh; padding-bottom: 5vh;'>
-    <div class="container container-max" align="center">
-      <h1>Junior College</h1>
+  <section class="block block--light block--skewed-left hero hero-top">
+    <div class="container grid grid--1x2">
+      <header class="block__header hero__content">
+        <h2 class="block__heading block__personal">
+          With us, Your Child Could Excel
+        </h2>
+        <h3 class="block__heading">Without missing the FUN.</h3>
+        <p class="hero__tagline hero-font">
+          Foster Curiosity and Confidence for Brighter Future.
+        </p>
+        <a href="enrol.html" class="btn btn--accent btn--stretched">
+          Enrol Now
+        </a>
+      </header>
+      <div class="image-center">
+        <img class="hero__image" src="assets/happychildNBG.webp" alt="" />
+      </div>
     </div>
   </section>
+
+  <!-- Start of Plans block -->
   <section class="block container block-plans">
     <div class="grid grid--1x3">
       <div class="plan">
-        <div class="card shadow card--secondary">
+        <div class="card card--secondary">
           <header class="card__header">
             <h3 class="plan__name">Monthly</h3>
-            <span class="plan__price">$480</span>
+            <span class="plan__price">$400</span>
             <span class="plan__billing-cycle">/subject/month</span>
             <span class="badge badge--secondary badge--small">5% OFF*</span>
             <span class="plan__description"> Less Risk, Give a Try. </span>
@@ -102,17 +117,21 @@
               <li class="list__item">FREE Super App</li>
               <li class="list__item">Early birds discounts*</li>
             </ul>
-
+            <a href="enrol.html">
+              <button class="btn btn--outline btn--block">Enrol Now</button>
+            </a>
           </div>
         </div>
       </div>
       <!-- End of first card -->
 
       <div class="plan plan--popular">
-        <div class="card shadow card--primary">
+        <div class="card card--primary">
           <header class="card__header">
             <h3 class="plan__name">Semesterly</h3>
-            <span class="plan__price">$432 <strike style="font-size: 25px">480</strike></span>
+            <span class="plan__price">
+              $360 <strike style="font-size: 25px">400</strike>
+            </span>
             <span class="plan__billing-cycle">/subject/month</span>
             <span class="badge badge--primary badge--small">10% OFF</span>
             <span class="plan__description"> The Most Welcomed Plan. </span>
@@ -122,21 +141,21 @@
               <li class="list__item">More Discounts</li>
               <li class="list__item">4x lessons per month</li>
               <li class="list__item">FREE Super App <strong>Pro</strong></li>
-              <li class="list__item">
-                <u>Higher</u> Value & Learning Experience
-              </li>
+              <li class="list__item"><u>Higher</u> Value for Your Child</li>
             </ul>
-
+            <a href="enrol.html">
+              <button class="btn btn--outline btn--block">Enrol Now</button>
+            </a>
           </div>
         </div>
       </div>
       <!-- End of second card -->
 
       <div class="plan">
-        <div class="shadow card card--secondary">
+        <div class="card card--secondary">
           <header class="card__header">
             <h3 class="plan__name">Yearly</h3>
-            <span class="plan__price">$384 <strike style="font-size: 25px">480</strike></span>
+            <span class="plan__price">$320 <strike style="font-size: 25px">400</strike></span>
             <span class="plan__billing-cycle">/subject/month</span>
             <span class="badge badge--secondary badge--small">20% OFF</span>
             <span class="plan__description">
@@ -147,18 +166,17 @@
               <li class="list__item">Most Discounts</li>
               <li class="list__item">4x lessons per month</li>
               <li class="list__item">FREE Super App <strong>MAX</strong></li>
-              <li class="list__item">
-                <u>Highest</u> Value Value & Learning Experience
-              </li>
+              <li class="list__item"><u>Highest</u> Value for Your Child</li>
             </ul>
-
+            <a href="enrol.html">
+              <button class="btn btn--outline btn--block">Enrol Now</button>
+            </a>
           </div>
         </div>
       </div>
       <!-- End of third card -->
     </div>
-    <div class="terms-conditions" align="center">
-      <br> <br>
+    <div class="terms-conditions">
       <p>
         *One-time registration fee (per student): $80 <br />
         *One-time deposit (refundable subjected to T&Cs): $120 <br />
@@ -166,56 +184,137 @@
       </p>
     </div>
   </section>
-  <br> <br>
+  <!-- Plans block End -->
 
-  <div class="container container-max">
-    <hr>
-  </div>
+  <!-- Subject Details -->
+  <!-- Start of section ONE -->
+  <section class="block container block--student">
+    <header class="block__header">
+      <h2>Upper Secondary Subjects</h2>
+      <p>
+        <strong>100% Improvement Rate.</strong> <br />
+        On the average, our students have seen a
+        <strong>2-band grade improvement</strong> from prelim exam to the
+        final exam.
+      </p>
+    </header>
+    <article class="grid grid--1x2 feature">
+      <div>
+        <h3 class="feature__heading">Elementary Maths</h3>
+        <p>
+          Mathematics is a subject that many students find difficult to study.
+          The common problems faced when learning math are difficulty in
+          grasping concepts and inconsistency in results.<br>
+          At Smart Tuition, our programme structure is designed to make learning Mathematics
+          easier and enjoyable. Our tutors will monitor the performance of
+          students and tailor the curriculum to meet the learning needs of the
+          class. Students can also learn at their own pace after class with
+          the aid of Super, with the sets of practice questions personalised
+          according to their level of understanding of concepts taught.
+          Difficulty of questions increases with students’ performance level
+          to build their confidence in answering more advanced questions.
+        </p>
+      </div>
+      <div>
+        <img class="feature__image" src="assets/math1.webp" alt="" />
+      </div>
+    </article>
+  </section>
+  <!-- End of section ONE -->
+  <!-- Start of section TWO -->
+  <section class="block container block--student">
+    <article class="grid grid--1x2 feature">
+      <div>
+        <img class="feature__image" src="assets/math2.webp" alt="" />
+      </div>
+      <div>
+        <h3 class="feature__heading">Additional Mathematics</h3>
+        <p>
+          A-Math is a highly valuable learning experience as it sets the
+          foundation for higher-level mathematics in JC and Polytechnics.
+          Compared to E-Math, A-Math is more complex and requires a higher
+          level of thinking and analytical skills. Students need to have a
+          more in-depth understanding of the mathematical concepts and be
+          extra careful as the questions usually involve more workings.<br>
+          The key to scoring this subject is practice. We provide a wide range of
+          practice questions on Super to familiarise students with the common
+          exam questions. Assessing the performance after every practice,
+          additional sets of questions will be curated for students to work on
+          concepts that they are weaker in. In addition, students will learn
+          strategies to present answers and tackle exam questions efficiently
+          to score in exams.
+        </p>
+      </div>
+    </article>
+  </section>
+  <!-- End of section TWO -->
+  <!-- Start of section THREE -->
+  <section class="block container block--student">
+    <article class="grid grid--1x2 feature">
+      <div>
+        <h3 class="feature__heading">Pure Chemistry</h3>
+        <p>
+          Congratulations! Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Et, praesentium.
+        </p>
+      </div>
+      <div>
+        <img class="feature__image" src="assets/chem1.webp" alt="" />
+      </div>
+    </article>
+  </section>
+  <!-- End of section THREE -->
+  <!-- Start of section FOUR -->
+  <section class="block container block--student">
+    <article class="grid grid--1x2 feature">
+      <div>
+        <img class="feature__image" src="assets/bio1.webp" alt="" />
+      </div>
+      <div>
+        <h3 class="feature__heading">Pure Biology</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, eos!
+        </p>
+      </div>
+    </article>
+  </section>
+  <!-- End of section FOUR -->
+  <!-- Start of section FIVE -->
+  <section class="block container block--student">
+    <article class="grid grid--1x2 feature">
+      <div>
+        <h3 class="feature__heading">Pure Physics</h3>
+        <p>
+          Congratulations! Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Et, praesentium.
+        </p>
+      </div>
+      <div>
+        <img class="feature__image" src="assets/physics1.webp" alt="" />
+      </div>
+    </article>
+  </section>
+  <!-- End of section FIVE -->
+  <!-- End of Subject Details -->
 
-  <div class="container container-max">
-    <br> <br>
-
-    <div class="row">
-      <div class="col-6">
-        <img class="subject-img img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1474&q=80"
-          alt="">
-        <br> <br>
+  <!-- Start of callout action -->
+  <div class="callout callout--primary">
+    <div class="grid grid--1x2">
+      <div class="callout__content">
+        <h2 class="callout__heading">
+          Be the Next SMART Student, <strong>Join Now.</strong>
+        </h2>
+        <p class="callout--primary">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+          inventore tempore, asperiores eaque fuga amet reiciendis quia?
+          Sequi, quis voluptates!
+        </p>
       </div>
-      <div class="col-6">
-        <h1>Mathematics</h1>
-      </div>
-      <div class="col">
-        <img class="subject-img  img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1590019012497-b44f1aaa40d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-          alt=""> <br> <br>
-      </div>
-      <div class="col-6">
-        <h1>Chemistry</h1>
-      </div>
-      <div class="col-6">
-        <img class="subject-img img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1631556097152-c39479bbff93?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJpb2xvZ3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-          alt=""> <br> <br>
-      </div>
-      <div class="col-6">
-        <h1>
-          Biology</h1>
-      </div>
-      <div class="col-6">
-        <img class="subject-img img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1633493702341-4d04841df53b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
-          alt=""> <br> <br>
-      </div>
-      <div class="col-6">
-        <h1>
-          Physics</h1>
-      </div>
-
+      <a href="#" class="btn btn--secondary btn--stretched">Enrol Now</a>
     </div>
   </div>
 
-  <br><br>
+  <!-- End of callout action -->
 
   <!-- Start of footer -->
   <footer class="block block--light footer block__footer">
