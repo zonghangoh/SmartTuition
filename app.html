@@ -45,18 +45,20 @@
             <a class="nav-link" href="/pedagogy.html">Pedagogy</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Classes
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/secondary.html">
-                Upper Secondary
-              </a>
-              <a class="dropdown-item" href="/jc.html">Junior College</a>
-              <a class="dropdown-item" href="/sec-timetable.html">Sec Timetable</a>
-              <a class="dropdown-item" href="/jc-timetable.html">JC Timetable</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="/secondary.html">Upper Secondary </a></li>
+              <li><a class="dropdown-item" href="/jc.html">Junior College</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li> <a class="dropdown-item" href="/sec-timetable.html">Sec Timetable</a>
+              </li>
+              <li> <a class="dropdown-item" href="/jc-timetable.html">JC Timetable</a>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="/app.html">Super App</a>
@@ -72,7 +74,7 @@
           <li class="nav-item">
             <a class="nav-link" href="/testimonials.html">Testimonials</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mobile-hide">
             <a href="/enrol.html"><button id='enrol-button' style='font-weight: bold;'>ENROL</button></a>
           </li>
         </ul>
@@ -85,12 +87,12 @@
   </div>
 
 
-  <div class='container' style='color: white; margin-top: -70vh; max-width: 800px' align='center'>
-    <h1 style='font-size: 2.8rem;'>What if we told you you could learn better with less time and effort?
+  <div class='container' style='color: white; margin-top: -50vh; max-width: 800px' align='center'>
+    <h1 style='font-size: 2.4rem;'>What if we told you you could learn better with less time and effort?
     </h1>
-    <p style='color: white;' class='lead'> It's time to stop studying like it's 1965.</p>
-    <br>
-    <div class='row'>
+    <p style='color: white;' class='lead'> Super App, exclusively for Smart Tuition Students.</p>
+
+    <!-- <div class='row'>
       <div class='col'>
         <button class='pop-button' style='max-width: 500px; font-weight: bold;'><i class="fab fa-android"></i>
           &nbsp;
@@ -103,7 +105,7 @@
           iOS
         </button>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div align='center' class='video-container' style='margin-top: 5vh; margin-left: auto; margin-right: auto;'>
@@ -123,13 +125,11 @@
         <img style='margin-bottom: 1rem;' src="https://cdn-icons-png.flaticon.com/512/4525/4525789.png" width='100rem;'
           alt="">
         <h4> Adaptive Questions</h4>
-        <p>Our personalisation algorithm works hard to pick up your weak concepts through the practice
-          questions
-          attempted. Find yourself wonky in a certain area? Our algorithm singles out the concepts you
-          might
-          not have grasped well in. Subsequent sets of questions are specially curated for you to
-          tackle them
-          and solidify your basic foundation.</p>
+        <p>
+          The questions are in line with the MOE-syllabus and personalised just for you. Our personalisation algorithm
+          works hard to pick up your weak concepts through the questions attempted. Drill your foundation with specially
+          curated questions. Learn anywhere, anytime.
+        </p>
         <br>
       </div>
       <div class='col-lg-6' align='center'>
@@ -137,13 +137,8 @@
         <img style='margin-bottom: 1rem;' src="https://cdn-icons-png.flaticon.com/512/4526/4526919.png" width='100rem;'
           alt="">
         <h4> Insightful Analytics</h4>
-        <p>Get meaningful insights to your understanding with our progress reports. How ready are you to
-          tackle
-          those questions in an exam setting? Our progress report analyses where you are in mastering
-          a
-          certain concept, whether you are still grappling with the fundamentals or whether you are
-          ready to
-          excel under time pressure with our inter-topic practices.</p>
+        <p>Keep your progress in check with insightful reports. How ready are you for exam? Our progress report tells
+          you just where you need some improvement. Get accurate insights on your learning.</p>
         <br>
 
       </div>
@@ -152,9 +147,9 @@
         <img style='margin-bottom: 1rem;' src="https://cdn-icons-png.flaticon.com/512/4525/4525936.png" width='100rem;'
           alt="">
         <h4> Peer Learning</h4>
-        <p>We believe in collaborative learning. Post your questions in the discussion forum and get
-          help. At
-          the same time, expose yourself to challenging questions from your peers. </p>
+        <p>
+          We foster a collaborative learning environment that enhances students’ learning. Answer your doubts and
+          challenge yourself to questions posted by your peers. </p>
         <br>
       </div>
       <div class='col-lg-6' align='center'>
@@ -162,10 +157,8 @@
         <img style='margin-bottom: 1rem;' src="https://cdn-icons-png.flaticon.com/512/4526/4526001.png" width='100rem;'
           alt="">
         <h4>Clarify Doubts Anytime</h4>
-        <p>Our tutors are always available to help you. Encountered a difficult question outside of
-          class time?
-          Post your questions on our discussion board and our tutors will answer them as soon as
-          possible.</p>
+        <p>We believe in learning beyond just  our tuition classes. Encountered a difficult question outside of class?
+          Post your questions and get help from our tutors.</p>
         <br>
       </div>
     </div>
@@ -173,24 +166,11 @@
 
 
   <br> <br>
-  <!-- <div class='container container-max'>
-    <div class='app-jumbo rounded shadow'>
-      <div style='max-width: 500px; margin:auto; padding: 1rem;'>
-        <div class='row' style='height: 24vh;'>
-          <div class='col-9' style='margin: auto;'>
-            <h4>Experienced Educator + Artificial Intelligence</h4>
-            <small>Our tuition programmes marry the best of technology and in-person coaching.
-              <br>
-              <a href='/pedagogy.html' style='color: white'>Learn About Our Pedagogy</a>
-            </small> <br> <br>
-          </div>
-          <div class='col-3' style='margin-top: 2vh;'>
-            <img class='hide-mobile' style='height: 17vh;' src="assets/meditate.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
+  <div align="center">
+    <a href='/enrol.html'><button id='enrol-button' class="enrol-button-dark" style='font-weight: bold;'>Register for
+        our classes and get access to Super App</button></a>
+  </div>
+
 
 
   <br><br> <br><br>
@@ -296,15 +276,10 @@
 
   <script src='scripts/particles.js'></script>
   <script src='scripts/app.js'></script>
+  <script src="scripts/main.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </body>
 

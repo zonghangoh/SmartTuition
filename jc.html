@@ -42,18 +42,20 @@
             <a class="nav-link" href="/pedagogy.html">Pedagogy</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="active nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+            <a class="active nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Classes
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/secondary.html">
-                Upper Secondary
-              </a>
-              <a class="dropdown-item" href="/jc.html">Junior College</a>
-              <a class="dropdown-item" href="/sec-timetable.html">Sec Timetable</a>
-              <a class="dropdown-item" href="/jc-timetable.html">JC Timetable</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="/secondary.html">Upper Secondary </a></li>
+              <li><a class="dropdown-item" href="/jc.html">Junior College</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li> <a class="dropdown-item" href="/sec-timetable.html">Sec Timetable</a>
+              </li>
+              <li> <a class="dropdown-item" href="/jc-timetable.html">JC Timetable</a>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/app.html">Super App</a>
@@ -67,7 +69,7 @@
           <li class="nav-item">
             <a class="nav-link" href="/testimonials.html">Testimonials</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mobile-hide">
             <a href="/enrol.html"><button id='enrol-button' style='font-weight: bold;'>ENROL</button></a>
           </li>
 
@@ -82,52 +84,115 @@
   <section style='background-color: #4eb2f0; color: white;padding-top: 15vh; padding-bottom: 5vh;'>
     <div class="container container-max" align="center">
       <h1>Junior College</h1>
+      <br>
+      <a href="/jc-timetable.html"><button class='pop-button' style='max-width: 500px; font-weight: bold;'>SEE
+          TIMETABLE
+        </button></a>
     </div>
   </section>
-  <section class="block container block-plans">
+
+  <div class="container container-max">
+    <br>
+
+    <div class="row">
+      <div class="col-md-5">
+        <img class="subject-img img-fluid rounded shadow"
+          src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1474&q=80"
+          alt="">
+        <br>
+      </div>
+      <div class="col-md-7">
+        <h1>H2 Math</h1>
+        <p>H2 Math requires students to be more proactive in bridging knowledge gaps. More often than not, students
+          struggle filling in the knowledge gaps. Smarty and our tutors aim to tackle just that: finding the gaps in
+          your concepts and bridging them most efficiently. Get your foundation right with our experienced tutors and
+          benefit from our proven pedagogy before it is too late.</p>
+        <div style='margin-bottom: 4vh;'></div>
+
+      </div>
+      <div class="col-md-5">
+        <img class="subject-img img-fluid rounded shadow"
+          src="https://images.unsplash.com/photo-1633493702341-4d04841df53b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
+          alt=""> <br>
+      </div>
+      <div class="col-md-7">
+        <h1>H2 Physics</h1>
+        <p>The H2 Physics syllabus does not only require students to recall the factual formulas, but also to apply
+          concepts in a logical, reasoned manner to higher order thinking questions. With practice questions from
+          Smarty, students will be able to pinpoint their weakest links. Get help from our experienced tutors to zero
+          into your weaker topics and understand how concepts are interlinked.
+        </p>
+        <div style='margin-bottom: 4vh;'></div>
+
+      </div>
+      <div class="col-md-5">
+        <img class="subject-img img-fluid rounded shadow"
+          src="https://images.unsplash.com/photo-1631556097152-c39479bbff93?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJpb2xvZ3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          alt=""> <br>
+      </div>
+      <div class="col-md-7">
+        <h1>H2 Biology</h1>
+        <p>Biology can be a tricky subject to master, due to the amount of content. At Smart Tuition, our tutors believe
+          in correct strategies to tackle the questions, rather than rote learning. Our algorithm is configured to
+          identify the keywords you will need to score in exams and our tutors are trained to guide students on how to
+          capture the essence of questions to score strategically.
+        </p>
+        <div style='margin-bottom: 4vh;'></div>
+
+      </div>
+      <div class="col-md-5">
+        <img class="subject-img img-fluid rounded shadow"
+          src="https://images.unsplash.com/photo-1628863353691-0071c8c1874c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+          alt=""> <br>
+
+      </div>
+      <div class="col-md-7">
+        <h1>
+          H2 Chemistry</h1>
+        <p>H2 Chemistry requires students to not only memorise, but also understand. Our tutors aim to break down the
+          concepts in a succinct manner, and solidify their understanding with Practice Testing on Smarty. With a
+          combination of curated questions and high-level coaching, our pedagogy has proven to bring the ‘A’ grade for
+          our students.</p>
+        <div style='margin-bottom: 4vh;'></div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div align="center">
+    <a href="/jc-timetable.html" class="learn-more">View Class Timetable</a>
+  </div>
+
+
+  <section class="block plan-container block-plans">
     <div class="grid grid--1x3">
       <div class="plan">
-        <div class="card shadow card--secondary">
+        <div class="shadow card card--secondary">
           <header class="card__header">
             <h3 class="plan__name">Monthly</h3>
             <span class="plan__price">$480</span>
             <span class="plan__billing-cycle">/subject/month</span>
             <span class="badge badge--secondary badge--small">5% OFF*</span>
-            <span class="plan__description"> Less Risk, Give a Try. </span>
+            <br>
+            <span class="plan__description"> Free First Trial Class* (Worth $120) </span>
           </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">25% discount for 1st Trial</li>
-              <li class="list__item">4x lessons per month</li>
-              <li class="list__item">FREE Super App</li>
-              <li class="list__item">Early birds discounts*</li>
-            </ul>
 
-          </div>
         </div>
       </div>
       <!-- End of first card -->
-
       <div class="plan plan--popular">
-        <div class="card shadow card--primary">
+        <div class="shadow card card--primary">
           <header class="card__header">
             <h3 class="plan__name">Semesterly</h3>
-            <span class="plan__price">$432 <strike style="font-size: 25px">480</strike></span>
+            <span class="plan__price">
+              $430 <strike style="font-size: 25px">480</strike>
+            </span>
             <span class="plan__billing-cycle">/subject/month</span>
             <span class="badge badge--primary badge--small">10% OFF</span>
-            <span class="plan__description"> The Most Welcomed Plan. </span>
+            <br>
+            <span class="plan__description"> Save up to $200 per semester </span>
           </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">More Discounts</li>
-              <li class="list__item">4x lessons per month</li>
-              <li class="list__item">FREE Super App <strong>Pro</strong></li>
-              <li class="list__item">
-                <u>Higher</u> Value & Learning Experience
-              </li>
-            </ul>
-
-          </div>
         </div>
       </div>
       <!-- End of second card -->
@@ -136,84 +201,27 @@
         <div class="shadow card card--secondary">
           <header class="card__header">
             <h3 class="plan__name">Yearly</h3>
-            <span class="plan__price">$384 <strike style="font-size: 25px">480</strike></span>
+            <span class="plan__price">$400 <strike style="font-size: 25px">480</strike></span>
             <span class="plan__billing-cycle">/subject/month</span>
             <span class="badge badge--secondary badge--small">20% OFF</span>
+            <br>
             <span class="plan__description">
-              Most Discounts & Best Support</span>
+              Save up to $960 a year</span>
           </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Most Discounts</li>
-              <li class="list__item">4x lessons per month</li>
-              <li class="list__item">FREE Super App <strong>MAX</strong></li>
-              <li class="list__item">
-                <u>Highest</u> Value Value & Learning Experience
-              </li>
-            </ul>
-
-          </div>
         </div>
       </div>
       <!-- End of third card -->
     </div>
+
     <div class="terms-conditions" align="center">
-      <br> <br>
+      <br>
       <p>
-        *One-time registration fee (per student): $80 <br />
-        *One-time deposit (refundable subjected to T&Cs): $120 <br />
-        *Course fees and registration fees are excluding GST
+        *Free Trial Class is only valid for students who have not
+        been registered with Smart Tuition <br>
+        *One-time deposit (refundable subjected to T&Cs): $120
       </p>
     </div>
   </section>
-  <br> <br>
-
-  <div class="container container-max">
-    <hr>
-  </div>
-
-  <div class="container container-max">
-    <br> <br>
-
-    <div class="row">
-      <div class="col-6">
-        <img class="subject-img img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1474&q=80"
-          alt="">
-        <br> <br>
-      </div>
-      <div class="col-6">
-        <h1>Mathematics</h1>
-      </div>
-      <div class="col">
-        <img class="subject-img  img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1590019012497-b44f1aaa40d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-          alt=""> <br> <br>
-      </div>
-      <div class="col-6">
-        <h1>Chemistry</h1>
-      </div>
-      <div class="col-6">
-        <img class="subject-img img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1631556097152-c39479bbff93?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJpb2xvZ3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-          alt=""> <br> <br>
-      </div>
-      <div class="col-6">
-        <h1>
-          Biology</h1>
-      </div>
-      <div class="col-6">
-        <img class="subject-img img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1633493702341-4d04841df53b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
-          alt=""> <br> <br>
-      </div>
-      <div class="col-6">
-        <h1>
-          Physics</h1>
-      </div>
-
-    </div>
-  </div>
 
   <br><br>
 
@@ -356,14 +364,8 @@
     }, 1);
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </body>
 

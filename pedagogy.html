@@ -42,18 +42,20 @@
             <a class="nav-link active" href="/pedagogy.html">Pedagogy</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Classes
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/secondary.html">
-                Upper Secondary
-              </a>
-              <a class="dropdown-item" href="/jc.html">Junior College</a>
-              <a class="dropdown-item" href="/sec-timetable.html">Sec Timetable</a>
-              <a class="dropdown-item" href="/jc-timetable.html">JC Timetable</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="/secondary.html">Upper Secondary </a></li>
+              <li><a class="dropdown-item" href="/jc.html">Junior College</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li> <a class="dropdown-item" href="/sec-timetable.html">Sec Timetable</a>
+              </li>
+              <li> <a class="dropdown-item" href="/jc-timetable.html">JC Timetable</a>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="/app.html">Super App</a>
@@ -69,7 +71,7 @@
           <li class="nav-item">
             <a class="nav-link" href="/testimonials.html">Testimonials</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mobile-hide">
             <a href="/enrol.html"><button id='enrol-button' style='font-weight: bold;'>ENROL</button></a>
           </li>
         </ul>
@@ -77,6 +79,8 @@
       </div>
     </div>
   </nav>
+  <div style="background-color: #4eb2f0; padding-top: 8vh">
+  </div>
   <div style="background-color: #4eb2f0; padding-top: 8vh">
     <img style="width: 100vw" src=" assets/approach_banner.png" alt="" />
   </div>
@@ -95,8 +99,7 @@
       </p>
       <small class="blue-text">
         "Modern technology has expanded the possibilities of how teachers can
-        engage students to learn better. Schools and companies are exploring
-        how technology can be meaningfully used in the classroom, but no one
+        engage students to learn better, but no one
         does personalisation and <b>blended learning</b> quite as effectively
         as Smart Tuition can!"
       </small>
@@ -104,8 +107,8 @@
   </div>
   <br /><br />
   <div class="container container-max" align="center">
-    <h1>🎓 We do not believe in one-size-fits-all.</h1>
-    <p align="left" class="lead" style="color: grey">
+    <h1>We do not believe in one-size-fits-all.</h1>
+    <p align="center" class="lead" style="color: grey">
       Instead, we believe in learning at your own pace. A perfect
       collaboration between our automated learning system and experienced
       tutors, we deliver just what our students need.
@@ -159,22 +162,17 @@
           </div>
           <p class="">
             <b>Personalised Practice Questions</b><br />
-            Post-lesson, students get to try more questions on their own. With
-            each set of practice, our algorithms pick up weaker concepts and
-            generate a more curated set of questions to strengthen learning
-            outcomes.
+            We encourage continued learning even beyond our classes. Post-lesson, students try more questions on their
+            own on our Super App, where learning pace is personalised for each student.
           </p>
-          <p>
-            Our algorithms also heed the best pedagogical practices such as
-            Practice Testing, Interleaved Practice and Spatial Practice to
-            optimise learning and memory retention.
+          <p class="">
+            Our algorithms also heed the best pedagogical practices to
+            optimise learning. 
           </p>
           <p class="">
             <b>Monitor Learning Progress</b><br />
-            A progress report on each topic will be generated at the end of
-            the lesson, and will be updated after every additional attempt on
-            the practice questions. It will be viewable by both tutors and
-            students to keep track of learning outcomes.
+            A topical progress report is generated at the end of each lesson, refreshed with every
+            additional practice attempt. Viewable by both tutors and students, we make progress tracking easy.
           </p>
         </div>
       </div>
@@ -183,7 +181,13 @@
   <br />
   <br />
 
-  <div class="container container-max">
+  <div align="center">
+    <a href='/enrol.html'><button id='enrol-button' class="enrol-button-dark"
+        style='font-weight: bold; min-width: 40vw;'>Register for our Free Trial Class now</button></a>
+  </div>
+  <br> <br>
+
+  <div class="container container-max hide-mobile">
     <div class="app-jumbo rounded shadow">
       <div style="max-width: 500px; margin: auto; padding: 1rem">
         <div class="row" style="height: 24vh">
@@ -306,14 +310,11 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  <script src="scripts/main.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </body>
 
