@@ -1004,14 +1004,7 @@ ul {
 }
 
 .table__timetable tbody .odd td {
-  font-size: 1.4rem;
-  letter-spacing: 0.35px;
-  font-weight: normal;
-  color: var(--color-body-darker);
   background-color: #ebf8ff;
-  padding: 0.8rem;
-  text-align: center;
-  border: 1px solid #8b8b8b85;
 }
 
 .table__timetable .text__vacancy {
@@ -1068,7 +1061,10 @@ ul {
     width: 50%;
     padding-left: 1.5rem;
     font-weight: 600;
-    font-size: 1.4rem;
     text-align: left;
+  }
+
+  .table__timetable tbody tr td {
+    font-size: 1rem !important;
   }
 }
