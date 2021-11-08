@@ -52,7 +52,7 @@
 }
 
 .small-pop-button {
-  min-height:calc(1.6187rem);
+  min-height: calc(1.6187rem);
   transform: translateY(calc(-0.4625rem));
   font-size: 0.7rem;
   width: 100%;
@@ -150,7 +150,7 @@
 #particles-js {
   background-color: #4eb2f0;
   width: 98vw;
-  height:65vh;
+  height: 65vh;
   /* position: fixed; */
   z-index: -10;
   top: 0;
@@ -187,7 +187,7 @@
 
 .contact-banner {
   background-image: url("assets/teaching3.jpeg");
-  background-size:cover;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   min-height: 42vh;
@@ -290,7 +290,7 @@
   padding: 1vw;
 }
 
-.review-card2{
+.review-card2 {
   transition: all 0.3s ease;
   padding: 1vw;
 }
@@ -298,7 +298,6 @@
 .review-card2:hover {
   margin-top: -10px;
 }
-
 
 .card-blue {
   border-color: #4eb2f0;
@@ -355,6 +354,159 @@ body {
   border-radius: 0.8rem;
 }
 
+/*-------------------------------------------------------*/
+.tutor1-details {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.tutor1-details:hover {
+  opacity: 1;
+}
+
+.text1 {
+  background-color: #302f2fee;
+  color: white;
+  font-size: 13.5px;
+  height: 192px;
+  width: 475px;
+  border-radius: 10px;
+  padding: 25px 20px 15px 20px;
+}
+
+.tutor2-details {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.tutor2-details:hover {
+  opacity: 1;
+}
+
+.text2 {
+  background-color: #302f2fee;
+  color: white;
+  font-size: 13.5px;
+  height: 192px;
+  width: 475px;
+  border-radius: 10px;
+  padding: 25px 20px 15px 20px;
+}
+
+.tutor3-details {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.tutor3-details:hover {
+  opacity: 1;
+}
+
+.text3 {
+  background-color: #302f2fee;
+  color: white;
+  font-size: 13.5px;
+  height: 192px;
+  width: 475px;
+  border-radius: 10px;
+  padding: 25px 20px 15px 20px;
+}
+
+.tutor4-details {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.tutor4-details:hover {
+  opacity: 1;
+}
+
+.text4 {
+  background-color: #302f2fee;
+  color: white;
+  font-size: 13.5px;
+  height: 192px;
+  width: 475px;
+  border-radius: 10px;
+  padding: 25px 20px 15px 20px;
+}
+
+.tutor5-details {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.tutor5-details:hover {
+  opacity: 1;
+}
+
+.text5 {
+  background-color: #302f2fee;
+  color: white;
+  font-size: 13.5px;
+  height: 192px;
+  width: 475px;
+  border-radius: 10px;
+  padding: 25px 20px 15px 20px;
+}
+
+.tutor6-details {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.tutor6-details:hover {
+  opacity: 1;
+}
+
+.text6 {
+  background-color: #302f2fee;
+  color: white;
+  font-size: 13.5px;
+  height: 192px;
+  width: 475px;
+  border-radius: 10px;
+  padding: 25px 20px 15px 20px;
+}
+
+/*-------------------------------------------------------*/
+
 @media only screen and (max-width: 768px) {
   .hide-mobile {
     display: none !important;
@@ -362,7 +514,7 @@ body {
   .mobile-hide {
     display: none !important;
   }
-  .testimonial-text{
+  .testimonial-text {
     margin-top: 2rem;
   }
   .banner {
@@ -377,8 +529,6 @@ body {
     background-blend-mode: multiply;
   }
 }
-
-
 
 .input-group-text {
   background: white;
@@ -572,7 +722,6 @@ p {
   opacity: 0.5;
 }
 
-
 @media screen and (min-width: 768px) {
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
@@ -594,7 +743,6 @@ p {
   }
 
   .footer__brand img {
-    
   }
 
   .footer__copyright {
@@ -617,7 +765,7 @@ p {
 
   .footer__section .list li a {
     margin: 0;
-    text-decoration: none !important; 
+    text-decoration: none !important;
     font-size: 1rem;
   }
 
@@ -625,7 +773,6 @@ p {
     font-size: 1.2rem;
   }
 }
-
 
 .collapsible__header {
   display: flex;
@@ -740,7 +887,6 @@ p {
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
-
 /* Grids */
 .grid {
   display: grid;
@@ -767,7 +913,6 @@ p {
 ul {
   list-style-type: none;
   padding-left: 0;
-
 }
 
 /* Lists */
@@ -800,8 +945,7 @@ ul {
   }
 }
 
-
-.card{
+.card {
   border-radius: 0.8rem;
 }
 
@@ -832,7 +976,6 @@ ul {
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
-
 
 .plan-container {
   /* a reusable class, got nothing to do with blocks, we can use it anywhere you want apply this constrain */
@@ -957,7 +1100,6 @@ ul {
   margin: 0 auto;
 }
 
-
 /* Tables */
 
 .table-container {
@@ -1054,9 +1196,9 @@ ul {
     position: relative;
   }
 
-  .table__timetable td::before{
+  .table__timetable td::before {
     content: attr(data-label);
-    position:absolute;
+    position: absolute;
     left: 0;
     width: 50%;
     padding-left: 1.5rem;
