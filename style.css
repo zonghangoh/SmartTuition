@@ -1210,3 +1210,7 @@ ul {
     font-size: 1rem !important;
   }
 }
+
+.hover-blue:hover {
+  color: #4eb2f0 !important;
+}

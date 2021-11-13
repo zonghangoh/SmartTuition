@@ -12,7 +12,6 @@
   <meta property="og:image" content="http://" />
   <meta property="og:url" content="https://smarttuition.web.app/" />
   <title>Smart Tuition</title>
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap"
@@ -20,29 +19,30 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="stylemc.css" /> -->
 </head>
 
-<body>
-  <!-- Start of top navigation -->
+<body style="">
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="/">
         <!-- <img src="https://cdn-icons-png.flaticon.com/512/4415/4415603.png" width="30" height="30" alt=""> -->
-        <img src="/assets/logo.png" width="28" height="30" alt="">
-        <span style='font-weight:500;'>SmartTuition</span>
+        <img src="/assets/logo.png" width="28" height="30" alt="" />
+        <span style="font-weight: 500">SmartTuition</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul style='margin-left: auto;' class="navbar-nav mb-2 mb-lg-0">
+        <ul style="margin-left: auto" class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="/pedagogy.html">Pedagogy</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="active nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Classes
             </a>
@@ -64,7 +64,7 @@
             <a class="nav-link" href="/about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/blog.html">Blog</a>
+            <a class="nav-link active" href="/blog.html">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/testimonials.html">Testimonials</a>
@@ -72,164 +72,150 @@
           <li class="nav-item mobile-hide">
             <a href="/enrol.html"><button id='enrol-button' style='font-weight: bold;'>ENROL</button></a>
           </li>
-
         </ul>
       </div>
     </div>
-    </div>
   </nav>
-  <!-- End of top navigation -->
 
-  <!-- Start of Hero -->
-  <section style='background-color: #4eb2f0; color: white;padding-top: 15vh; padding-bottom: 5vh;'>
-    <div class="container container-max" align="center">
-      <h1>Junior College</h1>
-      <br>
-      <a href="/jc-timetable.html"><button class='pop-button' style='max-width: 500px; font-weight: bold;'>SEE
-          TIMETABLE
-        </button></a>
-    </div>
-  </section>
+  <div class="container container-max" style="padding-top: 10vh">
+    <img src="https://res.cloudinary.com/dwxuq2vjl/image/upload/w_1200,f_auto/v1596077977/Blog/d6ribzmd75rterxklxzj.jpg"
+      alt="" class="img-fluid shadow-lg rounded" style="max-height: 40vh; margin-bottom: 2vh;" />
+    <h2> 7 Ways to Memorize and Learn things faster</h2>
+    <p class='lead'> 1 November 2021</p>
+
+    <p> Struggling to remember the content taught in class? Having difficulty in grasping and learning new concepts?
+      Follow
+      these methods to learn effectively and boost your memory.</p>
 
 
-  <section class="block plan-container block-plans">
-    <div class="grid grid--1x3">
-      <div class="plan">
-        <div class="shadow card card--secondary">
-          <header class="card__header">
-            <h3 class="plan__name">Monthly</h3>
-            <span class="plan__price">$480</span>
-            <span class="plan__billing-cycle">/subject/month</span>
-            <span class="badge badge--secondary badge--small">5% OFF*</span>
-            <br>
-            <span class="plan__description"> Free First Trial Class* (Worth $120) </span>
-          </header>
-
-        </div>
-      </div>
-      <!-- End of first card -->
-      <div class="plan plan--popular">
-        <div class="shadow card card--primary">
-          <header class="card__header">
-            <h3 class="plan__name">Semesterly</h3>
-            <span class="plan__price">
-              $430 <strike style="font-size: 25px">480</strike>
-            </span>
-            <span class="plan__billing-cycle">/subject/month</span>
-            <span class="badge badge--primary badge--small">10% OFF</span>
-            <br>
-            <span class="plan__description"> Save up to $200 per semester </span>
-          </header>
-        </div>
-      </div>
-      <!-- End of second card -->
-
-      <div class="plan">
-        <div class="shadow card card--secondary">
-          <header class="card__header">
-            <h3 class="plan__name">Yearly</h3>
-            <span class="plan__price">$400 <strike style="font-size: 25px">480</strike></span>
-            <span class="plan__billing-cycle">/subject/month</span>
-            <span class="badge badge--secondary badge--small">20% OFF</span>
-            <br>
-            <span class="plan__description">
-              Save up to $960 a year</span>
-          </header>
-        </div>
-      </div>
-      <!-- End of third card -->
-    </div>
-
-  </section>
-  <br>
-  <div class="terms-conditions" align="center">
-    <br>
+    <h4>Exercise</h4>
     <p>
-      *Free Trial Class is only valid for students who have not
-      been registered with Smart Tuition <br>
-      *One-time deposit (refundable subjected to T&Cs): $120
+      Exercising reaps many benefits, from ensuring your physical health to mental well-being. Not only that, it can
+      help
+      to boost your memory and thinking skills by increasing blood flow and oxygen transported to the brain.
     </p>
+    <p>
+      An article by Harvard Medical School suggests that working out can enhance cognitive function, allowing you to
+      increase attention span and retain information better. If you are always unable to concentrate during lessons or
+      recall what was taught in class, try squeezing in a short workout routine in your schedule and you will be
+      surprised
+      by the results.
+    </p>
+
+    <h4>Write Your Own Notes</h4>
+    <p>
+      Taking down notes forces you to focus in class and process information more detailedly, aiding you in grasping the
+      concepts taught more easily. Writing the content increases the degree of attention to the text and involves deeper
+      cognitive-processing, allowing information to be loaded into your memory.
+    </p>
+    <p>
+      A level up to making your notes will be to create mind maps for each of the topics that you are learning. This
+      helps
+      to:
+      Establish linkages between the concepts, further enhancing your understanding on the topics.
+      Combining text with visual elements would also improve information retention, converting them from short-term to
+      long-term memory.
+    </p>
+
+    <h4>Practice, Practice and Practice</h4>
+    <p>
+      It is an age-old saying that “Practice makes perfect”. When students practice solving questions, their ability to
+      transfer practiced skills to new and more complex problems is enhanced. However, how much practice is actually
+      considered enough to make it perfect?
+    </p>
+
+    <p>
+      It is important that students do not overkill with practice. Our Super App identifies your area of weakness and
+      curates practice questions(INTERNAL LINK), allowing you to focus on drilling your foundation in areas that your
+      learning outcomes are not met. With the progress report updated every time our students complete a practice,
+      students can know when they have practiced enough, saving them the time and energy.
+    </p>
+
+
+    <h4>Use Mnemonics Devices</h4>
+    <p>
+      Mnemonic is a tool that helps us to remember large amounts of information quickly for the long-term. It can come
+      in
+      many forms, such as acronyms, songs and rhymes, and is extremely useful when the order of information is
+      important.
+    </p>
+    <p>
+      A little effort and some creative juices are needed to come up with the list, but you can retain the information
+      for
+      a much longer period of time compared to purely memorising the words in order.
+    </p>
+
+    <h4>Reflect And Review Your Progress</h4>
+    <p>
+      Reflecting on what has been learned makes learning more self-aware and productive. Effectively reviewing our
+      progress builds one's confidence in the ability to achieve a goal (self-efficacy) translates into higher rates of
+      learning. It is important that we assess whether we have achieved the learning goals of a particular topic, rather
+      than cramming practices blindly.
+    </p>
+    <p>
+      Our Super App aims to help students assess whether the learning outcomes have been ticked off. The AI algorithm
+      effectively assesses our students’ understanding of the learning outcomes and rounds up the progress accurately in
+      our weekly progress reports. This saves time and effort for both our tutors and students who are looking to track
+      their progress of understanding on the road to examinations!
+    </p>
+
+    <h4>Use The Power Of Mental Spacing</h4>
+    <p>
+      One of the most effective strategies in retaining information is the idea of “distributed practice” and
+      “interleaving”— spacing out your study session over brief, frequent sessions, rather than long, marathon sessions
+      and alternating between different concepts. By Benedict Carey, it is akin to watering a lawn, “You can water a
+      lawn
+      once a week for 90 minutes or three times a week for 30 minutes,” but “Spacing out the watering during the week
+      will
+      keep the lawn greener over time.”</p>
+    <p>
+      To learn effectively, weave in the idea of mental spacing into your schedule.
+      Distribute by setting aside spacing out short, regular sessions for each subject everyday, instead of cramming
+      overnight.
+      Interleave by mixing or alternating concepts that you want to drill into memory. On top of topical practices,
+      inter-topical questions or exam-based questions are highly effective in training us to draw concepts from
+      different
+      topics and apply them.
+    </p>
+
+
+    <p>
+      Smart Tuition’s Super App heeds the best practices and aims to train our students’ cognitive abilities with such
+      practices. The curated questions generated often mix different concepts across topics in a single set of
+      questions,
+      in order to strengthen your association between topics.
+
+    </p>
+
+    <h4>Teach Others What You Have Learnt</h4>
+    <p>
+      The learning-by-teaching approach has been proven to be more effective than re-studying, because it compels the
+      teacher to retrieve what they’ve previously studied.
+    </p>
+    <p>
+
+    </p>
+    <p> Start off by learning the material as if you’re going to teach it to others. Familiarise the concept well enough
+      that you are able to explain it in your own words and find answers to likely questions people might ask. Next,
+      pretend that you’re teaching the material to someone, it can be anyone, your siblings, your parents and even your
+      friends. Did you truly grasp the concept?</p>
+    <p> Super App’s discussion forum aims to provide a platform for our students to do just that. Test your true
+      understanding of the concept by explaining the questions your friends might have on the forum. Or you’ve got a
+      question yourself? Get a friend’s help on our forum. We foster a collaborative learning environment for everybody.
+    </p>
+    <p> At SmartTuition, we believe in guiding our students to study the smarter way, which has proven to yield positive
+      results across all batches of over 50,000 students, with a 100% improvement rate using our pedagogy. Register for
+      our free trial class now and achieve exam success with us!</p>
+
+    <p>
+      If you have any questions about our programmes, please email us at enquiry@smarttuition.com or call us at +65 6648
+      7890 and we will be happy to assist you.
+    </p>
+
+
+
   </div>
-
-
-
-  <div align="center">
-    <a href="/jc-timetable.html" class="learn-more">View Class Timetable</a>
-  </div>
-
-
   <br> <br> <br>
-  <div class="container container-max">
-    <br>
-
-    <div class="row">
-      <div class="col-md-5">
-        <img id='math' class="subject-img img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1474&q=80"
-          alt="">
-        <br>
-      </div>
-      <div class="col-md-7">
-        <h1>H2 Math</h1>
-        <p>H2 Math requires students to be more proactive in bridging knowledge gaps. More often than not, students
-          struggle filling in the knowledge gaps. Smarty and our tutors aim to tackle just that: finding the gaps in
-          your concepts and bridging them most efficiently. Get your foundation right with our experienced tutors and
-          benefit from our proven pedagogy before it is too late.</p>
-        <div style='margin-bottom: 4vh;'></div>
-
-      </div>
-      <div class="col-md-5">
-        <img id='physics' class="subject-img img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1633493702341-4d04841df53b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
-          alt=""> <br>
-      </div>
-      <div class="col-md-7">
-        <h1>H2 Physics</h1>
-        <p>The H2 Physics syllabus does not only require students to recall the factual formulas, but also to apply
-          concepts in a logical, reasoned manner to higher order thinking questions. With practice questions from
-          Smarty, students will be able to pinpoint their weakest links. Get help from our experienced tutors to zero
-          into your weaker topics and understand how concepts are interlinked.
-        </p>
-        <div style='margin-bottom: 4vh;'></div>
-
-      </div>
-      <div class="col-md-5">
-        <img id='biology' class="subject-img img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1631556097152-c39479bbff93?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJpb2xvZ3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-          alt=""> <br>
-      </div>
-      <div class="col-md-7">
-        <h1>H2 Biology</h1>
-        <p>Biology can be a tricky subject to master, due to the amount of content. At Smart Tuition, our tutors believe
-          in correct strategies to tackle the questions, rather than rote learning. Our algorithm is configured to
-          identify the keywords you will need to score in exams and our tutors are trained to guide students on how to
-          capture the essence of questions to score strategically.
-        </p>
-        <div style='margin-bottom: 4vh;'></div>
-
-      </div>
-      <div class="col-md-5">
-        <img id='chemistry' class="subject-img img-fluid rounded shadow"
-          src="https://images.unsplash.com/photo-1628863353691-0071c8c1874c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-          alt=""> <br>
-
-      </div>
-      <div class="col-md-7">
-        <h1>
-          H2 Chemistry</h1>
-        <p>H2 Chemistry requires students to not only memorise, but also understand. Our tutors aim to break down the
-          concepts in a succinct manner, and solidify their understanding with Practice Testing on Smarty. With a
-          combination of curated questions and high-level coaching, our pedagogy has proven to bring the ‘A’ grade for
-          our students.</p>
-        <div style='margin-bottom: 4vh;'></div>
-
-      </div>
-
-    </div>
-  </div>
-
-  <br><br>
-
   <!-- Start of footer -->
   <footer class="block block--light footer block__footer">
     <div class="container grid footer__sections">
@@ -323,7 +309,7 @@
           Copyright &copy; 2021 SmartTuition. <br />
           All Rights Reserved.
         </p>
-        <div align="center">
+        <div align="center" style="">
           <a href="https://www.facebook.com/moneylendersingapore/">
             <i class="footer-icon fab fa-facebook-square"></i>
           </a>
@@ -336,36 +322,7 @@
     </div>
   </footer>
   <!-- End of footer -->
-
   <script src="scripts/main.js"></script>
-  <script>
-    let pause = false;
-    let reviewCount = 8;
-    let i = [];
-    for (let r = 0; r < reviewCount; r++) {
-      i.push(0);
-    }
-
-    var element = document.getElementsByClassName("reviews2");
-    element = element[0];
-    var timeout;
-    element.onmouseover = function (e) {
-      pause = !pause;
-    };
-    element.onmouseout = function (e) {
-      pause = !pause;
-    };
-    const interval = setInterval(function () {
-      if (pause) return;
-      for (let ii = 1; ii <= i.length; ii++) {
-        i[ii - 1] -= 0.1;
-        if (i[ii - 1] < -100 * ii)
-          i[ii - 1] = (i.length - 1) * 100 - 100 * (ii - 1);
-        document.getElementById("lol" + ii).style.transform =
-          "translateX(" + i[ii - 1] + "%)";
-      }
-    }, 1);
-  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
