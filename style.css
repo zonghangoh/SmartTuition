@@ -748,13 +748,6 @@ p {
     font-weight: 500;
   }
 
-  .footer__brand img {
-  }
-
-  .footer__address {
-    font-size: 0.8125rem;
-    text-align: left;
-  }
   .footer__copyrights {
     text-align: center;
     font-weight: 300;
