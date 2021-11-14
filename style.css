@@ -717,11 +717,12 @@ p {
 }
 
 .footer__address {
-  font-size: 0.8125rem;
-  color: #000;
-  opacity: 0.5;
-  text-align: left;
+  font-size: 0.8125rem !important;
+  color: #000 !important;
+  opacity: 0.5 !important;
+  text-align: left !important;
 }
+
 .footer__copyrights {
   text-align: center;
   font-weight: 300;
@@ -746,6 +747,7 @@ p {
     order: -1;
     margin-top: 1rem;
     font-weight: 500;
+    font-size: 1.2rem;
   }
 
   .footer__copyrights {
@@ -755,10 +757,6 @@ p {
   }
   .border__section {
     border: 0;
-  }
-
-  .footer__brand {
-    font-size: 1.2rem;
   }
 
   /* .footer__section .list {

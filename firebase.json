@@ -1,5 +1,16 @@
 {
   "hosting": {
+    "headers": [
+      {
+        "source": "/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0"
+          }
+        ]
+      }
+    ],
     "site": "smarttuition",
     "public": "public",
     "ignore": [
