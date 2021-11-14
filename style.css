@@ -716,10 +716,16 @@ p {
   text-align: center;
 }
 
-.footer__copyright {
-  font-size: 1.25rem;
+.footer__address {
+  font-size: 0.8125rem;
   color: #000;
   opacity: 0.5;
+  text-align: left;
+}
+.footer__copyrights {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.8125rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -745,10 +751,15 @@ p {
   .footer__brand img {
   }
 
-  .footer__copyright {
-    font-size: 1rem;
+  .footer__address {
+    font-size: 0.8125rem;
+    text-align: left;
   }
-
+  .footer__copyrights {
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8125rem;
+  }
   .border__section {
     border: 0;
   }
